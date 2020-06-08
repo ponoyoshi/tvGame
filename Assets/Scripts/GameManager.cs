@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public int currentMoney = 0;
     public const int MONEY_LOST_PER_MISTAKE = 250;
     public const int MONEY_GAINED_PER_GOOD_PREDICTION = 500;
+    [SerializeField] private List<string> questions = new List<string>();
 
     public void OnRoundEnded(int correctPredictions, int incorrectPredictions)
     {
