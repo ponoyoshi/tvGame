@@ -16,8 +16,4 @@ public class DataManager : MonoBehaviour
 
         return null;
     }
-    private void GetData()
-    {
-        
-    }
 }

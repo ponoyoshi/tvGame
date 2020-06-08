@@ -10,9 +10,9 @@ public class Profile : ScriptableObject
     public int ID;
     public string fullName;
     public string interest;
-    public List<Answer> answers;
     public int money;
     public Image image;
+    public List<Answer> answers;
 
     [Serializable]
     public struct Answer
@@ -22,4 +22,3 @@ public class Profile : ScriptableObject
         public bool isTrue;
     }
 }
-
