@@ -15,7 +15,9 @@ MonoBehaviour:
   fullName: Kevin
   interest: "Philosophie et Sciences Sociales, Informatique, Monde animal, Mat\xE9riel
     \xE9lectronique"
-  money: 0
+  money: 2500
   score: 0
   image: {fileID: 21300000, guid: 275b2be9b1c8ef045b5e4a196ae83157, type: 3}
-  answers: []
+  answers:
+  - answer: Bad
+    isTrue: 0

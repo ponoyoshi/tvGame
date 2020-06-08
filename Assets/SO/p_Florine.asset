@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fullName: Florine
   interest: "Peinture et Sculpture, Monde animal, Langue Fran\xE7aise, Cin\xE9ma"
-  money: 0
+  money: 2500
   score: 0
   image: {fileID: 21300000, guid: 656bf6f265fbcbf44bf12b47e7fa32f9, type: 3}
-  answers: []
+  answers:
+  - answer: Bad
+    isTrue: 0
