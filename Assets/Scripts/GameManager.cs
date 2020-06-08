@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private CommonPanelWidget commonPanelWidget = null;
+    [SerializeField] private CandidatesPanelWidget candidatePanelWidget = null;
     public int currentQuestion = 0;
     public int currentMoney = 0;
     public const int MONEY_LOST_PER_MISTAKE = 250;
@@ -12,7 +14,9 @@ public class GameManager : MonoBehaviour
     public void OnRoundEnded(int correctPredictions, int incorrectPredictions)
     {
         SetMoney(correctPredictions, incorrectPredictions);
-        currentQuestion++;
+        candidatePanelWidget.SetCandidateTiles();
+
+        //currentQuestion++;
     }
 
     public void SetMoney(int correctPredictions, int incorrectPredictions)
@@ -29,5 +33,7 @@ public class GameManager : MonoBehaviour
         {
             currentMoney += MONEY_GAINED_PER_GOOD_PREDICTION * correctPredictions;
         }
+
+        commonPanelWidget.SetPlayerMoney(currentMoney);
     }
 }

@@ -14,14 +14,20 @@ public class CandidateTileWidget : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scoreText = null;
     [SerializeField] private Profile currentCandidate = null;
 
-    public int currentUpvoteScore = 0; //0 = null, 1 = downvote, 2 = upvote
+    [HideInInspector] public int currentUpvoteScore = 0; //0 = null, 1 = downvote, 2 = upvote
     [SerializeField] private GameManager gameManager = null;
 
     [Header("Colors")]
     [SerializeField] private Color UPVOTE_COLOR = Color.blue;
     [SerializeField] private Color DOWNVOTE_COLOR = Color.red;
+    [SerializeField] private Color DEFAULT_COLOR = Color.grey;
 
     private void Start()
+    {
+        SetFakeCurrentCandidate();
+    }
+
+    public void SetFakeCurrentCandidate()
     {
         SetCurrentCandidate(currentCandidate);
     }
@@ -38,6 +44,9 @@ public class CandidateTileWidget : MonoBehaviour
         nameText.text           = name;
         preferencesText.text    = preferences;
         scoreText.text          = score.ToString();
+
+        currentUpvoteScore = 0;
+        background.color = Color.gray;
     }
 
     private void SetUpdvotedVisual()
