@@ -5,12 +5,12 @@ using UnityEngine;
 public class DataManager : MonoBehaviour
 {
     private List<Profile> profiles = new List<Profile>();
-    void Awake()
+    public Profile[] GetRandomProfiles()
     {
-        
-    }
-    public Profile GetProfile(int ID)
-    {
-        return profiles[ID];
+        Profile[] returnedProfiles = new Profile[5];
+        var rng = new System.Random();
+        var values = Enumerable.Range(0, users.Count).OrderBy(x => rng.Next()).ToArray();
+        for(int i = 0; i < 5; i++)
+            returnedProfiles[i] = profiles[values[i]]; 
     }
 }
