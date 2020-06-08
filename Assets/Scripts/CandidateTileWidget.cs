@@ -55,11 +55,19 @@ public class CandidateTileWidget : MonoBehaviour
 
         currentUpvoteScore = 0;
         ResetDefaultVisual();
+
+        StartCoroutine(PlayAnimationAfterDelay(transform.GetSiblingIndex() * 0.2f, "Appear"));
+    }
+
+    private IEnumerator PlayAnimationAfterDelay(float delay, string animationName)
+    {
+        yield return new WaitForSeconds(delay);
+        animator.SetTrigger(animationName);
     }
 
     public void ShowAnswer()
     {
-        animator.SetTrigger("ShowAnswer");
+        StartCoroutine(PlayAnimationAfterDelay(transform.GetSiblingIndex() * 0.8f, "ShowAnswer"));
     }
 
     private void SetUpdvotedVisual()
@@ -103,6 +111,11 @@ public class CandidateTileWidget : MonoBehaviour
     public void OnShowAnswerAnimationEnded()
     {
 
+    }
+
+    public void HideTile()
+    {
+        StartCoroutine(PlayAnimationAfterDelay(transform.GetSiblingIndex() * 0.1f, "Hide"));
     }
 
     // 0 = no prediction, 1 = correct, 2 = incorrect

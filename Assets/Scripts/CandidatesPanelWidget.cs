@@ -37,7 +37,7 @@ public class CandidatesPanelWidget : MonoBehaviour
 
     private IEnumerator UpdateMoneyAfterDelay()
     {
-        yield return new WaitForSeconds(1.2f);
+        yield return new WaitForSeconds(5.5f);
         gameManager.OnRoundEnded(correctPredictions, incorrectPredictions);
     }
 
