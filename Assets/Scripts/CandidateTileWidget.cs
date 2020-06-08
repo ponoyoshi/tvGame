@@ -14,6 +14,8 @@ public class CandidateTileWidget : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scoreText = null;
     [SerializeField] private Profile currentCandidate = null;
 
+    private int currentUpvoteScore = 0; //0 = null, 1 = downvote, 2 = upvote
+
     [Header("Colors")]
     [SerializeField] private Color UPVOTE_COLOR = Color.blue;
     [SerializeField] private Color DOWNVOTE_COLOR = Color.red;
@@ -49,13 +51,23 @@ public class CandidateTileWidget : MonoBehaviour
 
     public void OnUpvotePressed()
     {
-        currentCandidate.upvoteScore = 2;
+        currentUpvoteScore = 2;
         SetUpdvotedVisual();
     }
 
     public void OnDownvotePressed()
     {
-        currentCandidate.upvoteScore = 1;
+        currentUpvoteScore = 1;
         SetDownvotedVisual();
+    }
+
+    public void onRoundEnded()
+    {
+        switch (currentUpvoteScore)
+        {
+            case (0):
+
+                break;
+        }
     }
 }

@@ -11,8 +11,6 @@ public class Profile : ScriptableObject
     public string interest;
     public int money;
     public int score;
-    //0 = null, 1 = downvote, 2 = upvote
-    public int upvoteScore;
     public Sprite image;
     public List<Answer> answers;
 
