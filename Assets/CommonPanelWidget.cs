@@ -6,6 +6,12 @@ using UnityEngine;
 public class CommonPanelWidget : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI playerMoneyText = null;
+    [SerializeField] private TextMeshProUGUI currentQuestionText = null;
+
+    public void SetCurrentQuestion(string question)
+    {
+        currentQuestionText.text = question;
+    }
 
     public void SetPlayerMoney(int money)
     {

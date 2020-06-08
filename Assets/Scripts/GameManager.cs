@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     {
         SetMoney(correctPredictions, incorrectPredictions);
         candidatePanelWidget.SetCandidateTiles();
-
+        commonPanelWidget.SetCurrentQuestion(questions[currentQuestion]);
         //currentQuestion++;
     }
 
