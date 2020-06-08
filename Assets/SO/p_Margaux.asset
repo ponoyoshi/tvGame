@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f64d77aecddae64aadc96948fd37d83, type: 3}
-  m_Name: p_Paul
+  m_Name: p_Margaux
   m_EditorClassIdentifier: 
-  fullName: Paul
-  interest: "Politique, Mat\xE9riel \xE9lectronique, Cin\xE9ma, Musique"
+  fullName: Margaux
+  interest: Informatique, Monde animal, Nourriture et nutrition, Code de la route
   money: 0
   score: 0
-  image: {fileID: 21300000, guid: 5e0264335027b3645abd338ae3b746e0, type: 3}
+  image: {fileID: 21300000, guid: 767c84af97a8a3f45aa726747a68b77d, type: 3}
   answers: []

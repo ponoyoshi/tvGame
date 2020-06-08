@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f64d77aecddae64aadc96948fd37d83, type: 3}
   m_Name: "p_Th\xE9o"
   m_EditorClassIdentifier: 
-  fullName: 
-  interest: 
+  fullName: "Th\xE9o"
+  interest: Alcools, BD et Comics, Manga et anime, Musique
   money: 0
   score: 0
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: dcbd91763d69555449fd7462a72ff561, type: 3}
   answers: []
