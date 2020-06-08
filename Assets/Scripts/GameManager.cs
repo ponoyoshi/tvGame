@@ -8,8 +8,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private CandidatesPanelWidget candidatePanelWidget = null;
     public int currentQuestion = 0;
     public int currentMoney = 0;
-    public const int MONEY_LOST_PER_MISTAKE = 250;
-    public const int MONEY_GAINED_PER_GOOD_PREDICTION = 500;
+    private const int MONEY_LOST_PER_MISTAKE = 250;
+    private const int MONEY_GAINED_PER_GOOD_PREDICTION = 500;
+    private const int MONEY_MULTIPLE = 50;
+    private const int MONEY_DIVIDE_RATIO = 2;
 
     public void OnRoundEnded(int correctPredictions, int incorrectPredictions)
     {
@@ -23,7 +25,12 @@ public class GameManager : MonoBehaviour
     {
         if (incorrectPredictions > 0 && correctPredictions == 0)
         {
-            currentMoney = currentMoney / 2;
+            int roundedMoney = currentMoney / MONEY_DIVIDE_RATIO;
+            roundedMoney /= MONEY_MULTIPLE;
+            roundedMoney = Mathf.RoundToInt(roundedMoney);
+            roundedMoney *= MONEY_MULTIPLE;
+
+            currentMoney = roundedMoney;
         }
         else if (incorrectPredictions > 0)
         {

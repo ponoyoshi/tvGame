@@ -8,11 +8,11 @@ public class CandidatesPanelWidget : MonoBehaviour
 
     [SerializeField] private CandidateTileWidget[] currentCandidate = null;
 
+    private int correctPredictions = 0;
+    private int incorrectPredictions = 0;
+
     public void OnEndRoundButtonPressed()
     {
-        int correctPredictions      = 0;
-        int incorrectPredictions    = 0;
-
         for (int i = 0; i< currentCandidate.Length; i++)
         {
             if (currentCandidate[i].IsPredictionCorrect() == 1)
@@ -24,12 +24,18 @@ public class CandidatesPanelWidget : MonoBehaviour
                 incorrectPredictions++;
             }
 
+            currentCandidate[i].ShowAnswer();
             currentCandidate[i].onRoundEnded();
 
         }
 
-        gameManager.OnRoundEnded(correctPredictions, incorrectPredictions);
+        StartCoroutine(UpdateMoneyAfterDelay());
+    }
 
+    private IEnumerator UpdateMoneyAfterDelay()
+    {
+        yield return new WaitForSeconds(1.2f);
+        gameManager.OnRoundEnded(correctPredictions, incorrectPredictions);
     }
 
     public void SetCandidateTiles()

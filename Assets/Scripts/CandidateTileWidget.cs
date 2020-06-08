@@ -12,7 +12,9 @@ public class CandidateTileWidget : MonoBehaviour
     [SerializeField] private TextMeshProUGUI nameText = null;
     [SerializeField] private TextMeshProUGUI preferencesText = null;
     [SerializeField] private TextMeshProUGUI scoreText = null;
+    [SerializeField] private TextMeshProUGUI answerText = null;
     [SerializeField] private Profile currentCandidate = null;
+    [SerializeField] private Animator animator = null;
 
     [HideInInspector] public int currentUpvoteScore = 0; //0 = null, 1 = downvote, 2 = upvote
     [SerializeField] private GameManager gameManager = null;
@@ -35,18 +37,24 @@ public class CandidateTileWidget : MonoBehaviour
     public void SetCurrentCandidate (Profile scriptableObject)
     {
         currentCandidate = scriptableObject;
-        SetTile(currentCandidate.image, currentCandidate.fullName, currentCandidate.interest, currentCandidate.score);
+        SetTile(currentCandidate.image, currentCandidate.fullName, currentCandidate.interest, currentCandidate.answers[gameManager.currentQuestion].answer, currentCandidate.score);
     }
 
-    private void SetTile(Sprite picture, string name, string preferences, int score = 0)
+    private void SetTile(Sprite picture, string name, string preferences, string answer, int score = 0)
     {
         profilePicture.sprite   = picture;
         nameText.text           = name;
         preferencesText.text    = preferences;
         scoreText.text          = score.ToString();
+        answerText.text         = answer;
 
         currentUpvoteScore = 0;
         background.color = Color.gray;
+    }
+
+    public void ShowAnswer()
+    {
+        animator.SetTrigger("ShowAnswer");
     }
 
     private void SetUpdvotedVisual()
@@ -76,12 +84,19 @@ public class CandidateTileWidget : MonoBehaviour
 
     }
 
+    public void OnShowAnswerAnimationEnded()
+    {
+
+    }
+
     // 0 = no prediction, 1 = correct, 2 = incorrect
     public int IsPredictionCorrect()
     {
         //correct answer from candidate
         if (currentCandidate.answers[gameManager.currentQuestion].isTrue)
         {
+            currentCandidate.score += 1;
+
             if (currentUpvoteScore == 2)
             {
                 return 1;
@@ -94,7 +109,6 @@ public class CandidateTileWidget : MonoBehaviour
             {
                 return 0;
             }
-
         }
 
         //wrong answer from candidate
