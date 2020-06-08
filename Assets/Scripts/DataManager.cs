@@ -13,9 +13,11 @@ public class DataManager : MonoBehaviour
     {
         foreach(var profile in profiles)
             if(ID == profile.ID) return profile;
+
+        return null;
     }
     private void GetData()
     {
-
+        
     }
 }
