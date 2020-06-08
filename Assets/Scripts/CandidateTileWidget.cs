@@ -14,7 +14,8 @@ public class CandidateTileWidget : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scoreText = null;
     [SerializeField] private Profile currentCandidate = null;
 
-    private int currentUpvoteScore = 0; //0 = null, 1 = downvote, 2 = upvote
+    public int currentUpvoteScore = 0; //0 = null, 1 = downvote, 2 = upvote
+    [SerializeField] private GameManager gameManager = null;
 
     [Header("Colors")]
     [SerializeField] private Color UPVOTE_COLOR = Color.blue;
@@ -63,11 +64,45 @@ public class CandidateTileWidget : MonoBehaviour
 
     public void onRoundEnded()
     {
-        switch (currentUpvoteScore)
-        {
-            case (0):
 
-                break;
+    }
+
+    // 0 = no prediction, 1 = correct, 2 = incorrect
+    public int IsPredictionCorrect()
+    {
+        //correct answer from candidate
+        if (currentCandidate.answers[gameManager.currentQuestion].isTrue)
+        {
+            if (currentUpvoteScore == 2)
+            {
+                return 1;
+            }
+            else if (currentUpvoteScore == 1)
+            {
+                return 2;
+            }
+            else
+            {
+                return 0;
+            }
+
+        }
+
+        //wrong answer from candidate
+        else
+        {
+            if (currentUpvoteScore == 2)
+            {
+                return 2;
+            }
+            else if (currentUpvoteScore == 1)
+            {
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
         }
     }
 }
