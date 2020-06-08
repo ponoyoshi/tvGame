@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f64d77aecddae64aadc96948fd37d83, type: 3}
   m_Name: TestProfile
   m_EditorClassIdentifier: 
-  ID: 0
-  fullName: 
-  interest: 
+  fullName: Aristote
+  interest: Metal Music
+  money: 1500
+  score: 2
+  image: {fileID: 21300000, guid: 52a3161c309f51a41b012df29dce8477, type: 3}
   answers:
   - answer: 
     isTrue: 0
-  money: 0
-  image: {fileID: 0}
