@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: TestProfile 1
   m_EditorClassIdentifier: 
   fullName: Sigmund Freud
-  interest: Metal Music
-  money: 1500
+  interest: Le cul, principalement
+  money: 2500
   score: 2
   image: {fileID: 21300000, guid: 52a3161c309f51a41b012df29dce8477, type: 3}
   answers:
