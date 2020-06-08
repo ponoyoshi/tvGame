@@ -4,16 +4,13 @@ using UnityEngine;
 
 public class DataManager : MonoBehaviour
 {
-    public List<Profile> profiles = new List<Profile>();
+    private List<Profile> profiles = new List<Profile>();
     void Awake()
     {
-        GetData();
+        
     }
     public Profile GetProfile(int ID)
     {
-        foreach(var profile in profiles)
-            if(ID == profile.ID) return profile;
-
-        return null;
+        return profiles[ID];
     }
 }

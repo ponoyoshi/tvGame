@@ -7,7 +7,6 @@ using UnityEngine.UI;
 [CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/Profile", order = 1)]
 public class Profile : ScriptableObject
 {
-    public int ID;
     public string fullName;
     public string interest;
     public int money;
