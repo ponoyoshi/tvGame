@@ -13,6 +13,9 @@ public class CandidatesPanelWidget : MonoBehaviour
 
     public void OnEndRoundButtonPressed()
     {
+        correctPredictions = 0;
+        incorrectPredictions = 0;
+
         for (int i = 0; i< currentCandidate.Length; i++)
         {
             if (currentCandidate[i].IsPredictionCorrect() == 1)
