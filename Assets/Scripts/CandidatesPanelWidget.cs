@@ -31,4 +31,12 @@ public class CandidatesPanelWidget : MonoBehaviour
         gameManager.OnRoundEnded(correctPredictions, incorrectPredictions);
 
     }
+
+    public void SetCandidateTiles()
+    {
+        for (int i = 0; i < currentCandidate.Length; i++)
+        {
+            currentCandidate[i].SetFakeCurrentCandidate();
+        }
+    }
 }
