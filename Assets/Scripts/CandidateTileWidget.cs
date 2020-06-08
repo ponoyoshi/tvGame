@@ -49,7 +49,7 @@ public class CandidateTileWidget : MonoBehaviour
         answerText.text         = answer;
 
         currentUpvoteScore = 0;
-        background.color = Color.gray;
+        ResetDefaultVisual();
     }
 
     public void ShowAnswer()
@@ -67,6 +67,11 @@ public class CandidateTileWidget : MonoBehaviour
         background.color = DOWNVOTE_COLOR;
     }
 
+    private void ResetDefaultVisual()
+    {
+        background.color =DEFAULT_COLOR;
+    }
+
     public void OnUpvotePressed()
     {
         currentUpvoteScore = 2;
@@ -77,6 +82,12 @@ public class CandidateTileWidget : MonoBehaviour
     {
         currentUpvoteScore = 1;
         SetDownvotedVisual();
+    }
+
+    public void OnCancelPressed()
+    {
+        currentUpvoteScore = 0;
+        ResetDefaultVisual();
     }
 
     public void onRoundEnded()
