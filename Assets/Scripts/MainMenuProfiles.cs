@@ -14,7 +14,7 @@ public class MainMenuProfiles : MonoBehaviour
             GameObject go = new GameObject();      
             go.AddComponent(typeof(Image));
             go.GetComponent<Image>().sprite = profile.image;       
-            go.transform.parent = this.transform;
+            go.transform.SetParent(this.transform);
             go.transform.localScale = new Vector3(1,1,1);
         }
     }
