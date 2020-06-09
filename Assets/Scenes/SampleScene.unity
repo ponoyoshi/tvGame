@@ -914,6 +914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7133141f037c78b4fb2a5945adcc27cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 1842071414}
   playerMoneyText: {fileID: 1259903182}
   currentQuestionText: {fileID: 371057833}
   animator: {fileID: 1158337862}

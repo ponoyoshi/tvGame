@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class CommonPanelWidget : MonoBehaviour
 {
+    [SerializeField] private GameManager gameManager = null;
     [SerializeField] private TextMeshProUGUI playerMoneyText = null;
     [SerializeField] private TextMeshProUGUI currentQuestionText = null;
     [SerializeField] public Animator animator = null;
@@ -17,5 +18,10 @@ public class CommonPanelWidget : MonoBehaviour
     public void SetPlayerMoney(int money)
     {
         playerMoneyText.text = money.ToString();
+    }
+
+    public void UpdateObjective()
+    {
+        gameManager.SetCurrentQuestion();
     }
 }

@@ -18,8 +18,12 @@ public class GameManager : MonoBehaviour
     {
         SetMoney(correctPredictions, incorrectPredictions);
         candidatePanelWidget.SetCandidateTiles();
-        commonPanelWidget.SetCurrentQuestion(questions[currentQuestion]);
         //currentQuestion++;
+    }
+
+    public void SetCurrentQuestion()
+    {
+        commonPanelWidget.SetCurrentQuestion(questions[currentQuestion]);
     }
 
     public void SetMoney(int correctPredictions, int incorrectPredictions)
