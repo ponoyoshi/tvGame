@@ -39,7 +39,7 @@ public class CandidateTileWidget : MonoBehaviour
         SetCurrentCandidate(currentCandidate);
     }
 
-    public void SetCurrentCandidate (Profile scriptableObject)
+    public void SetCurrentCandidate(Profile scriptableObject)
     {
         currentCandidate = scriptableObject;
         SetTile(currentCandidate.image, currentCandidate.fullName, currentCandidate.interest, currentCandidate.answers[gameManager.currentQuestion].answer, currentCandidate.score, currentCandidate.money);
@@ -84,7 +84,7 @@ public class CandidateTileWidget : MonoBehaviour
 
     private void ResetDefaultVisual()
     {
-        background.color =DEFAULT_COLOR;
+        background.color = DEFAULT_COLOR;
     }
 
     public void OnUpvotePressed()
