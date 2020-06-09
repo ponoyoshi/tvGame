@@ -10,6 +10,7 @@ public class CandidatesPanelWidget : MonoBehaviour
     [SerializeField] private CommonPanelWidget commonPanelWidget = null;
 
     [SerializeField] private GameObject endRoundButton = null;
+    [SerializeField] private GameObject hideAnswersButton = null;
 
     [SerializeField] private CandidateTileWidget[] currentCandidate = null;
     [SerializeField] private Animator animator = null;
@@ -44,16 +45,27 @@ public class CandidatesPanelWidget : MonoBehaviour
 
         }
 
+        endRoundButton.SetActive(false);
+
         SetRewardPopup();
 
+        StartCoroutine(ShowHideAnswersButtonAfterDelay());
+    }
+
+    public void OnHideAnswersPressed()
+    {
         StartCoroutine(UpdateMoneyAfterDelay());
+    }
+
+    private IEnumerator ShowHideAnswersButtonAfterDelay()
+    {
+        yield return new WaitForSeconds(4.4f);
+        hideAnswersButton.SetActive(true);
     }
 
     private IEnumerator UpdateMoneyAfterDelay()
     {
-        endRoundButton.SetActive(false);
-
-        yield return new WaitForSeconds(5.5f);
+        hideAnswersButton.SetActive(false);
 
         animator.SetTrigger("Reward");
 
