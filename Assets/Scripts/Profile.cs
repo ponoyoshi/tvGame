@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class Profile : ScriptableObject
 {
     public string fullName;
-    public string interest;
+    public string[] interest;
     public int money;
     public int score;
     public Sprite image;

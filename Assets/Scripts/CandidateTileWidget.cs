@@ -10,7 +10,7 @@ public class CandidateTileWidget : MonoBehaviour
     [SerializeField] private Image profilePicture = null;
     [SerializeField] private Image background = null;
     [SerializeField] private TextMeshProUGUI nameText = null;
-    [SerializeField] private TextMeshProUGUI preferencesText = null;
+    [SerializeField] private TextMeshProUGUI[] preferencesText = null;
     [SerializeField] private TextMeshProUGUI scoreText = null;
     [SerializeField] private TextMeshProUGUI moneyText = null;
     [SerializeField] private TextMeshProUGUI answerText = null;
@@ -45,11 +45,16 @@ public class CandidateTileWidget : MonoBehaviour
         SetTile(currentCandidate.image, currentCandidate.fullName, currentCandidate.interest, currentCandidate.answers[gameManager.currentQuestion].answer, currentCandidate.score, currentCandidate.money);
     }
 
-    private void SetTile(Sprite picture, string name, string preferences, string answer, int score, int money)
+    private void SetTile(Sprite picture, string name, string[] preferences, string answer, int score, int money)
     {
         profilePicture.sprite   = picture;
         nameText.text           = name;
-        preferencesText.text    = preferences;
+
+        for (int i = 0; i<= preferencesText.Length; i++)
+        {
+            preferencesText[i].text = preferences[i];
+        }
+
         scoreText.text          = score.ToString();
         moneyText.text          = money.ToString();
         answerText.text         = answer;
