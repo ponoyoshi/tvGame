@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: p_Corentin
   m_EditorClassIdentifier: 
   fullName: 'Corentin '
-  interest: "Politique, Informatique, Mat\xE9riel \xE9lectronique, Manga et anime"
+  interest:
+  - Informatique
+  - "Mat\xE9riel \xE9lectronique"
+  - Politique
+  - Manga et Anime
   money: 2500
   score: 0
   image: {fileID: 21300000, guid: ee0afb647c1b31f4f82c9fe839eb8881, type: 3}

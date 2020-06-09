@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: p_Kevin
   m_EditorClassIdentifier: 
   fullName: Kevin
-  interest: "Philosophie et Sciences Sociales, Informatique, Monde animal, Mat\xE9riel
-    \xE9lectronique"
+  interest:
+  - Informatique
+  - "Mat\xE9riel \xE9lectronique"
+  - Philosophie
+  - Monde Animal
   money: 2500
   score: 0
   image: {fileID: 21300000, guid: 275b2be9b1c8ef045b5e4a196ae83157, type: 3}
