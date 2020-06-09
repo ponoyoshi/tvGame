@@ -12,9 +12,61 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f64d77aecddae64aadc96948fd37d83, type: 3}
   m_Name: p_Clement
   m_EditorClassIdentifier: 
-  fullName: 
-  interest: 
+  fullName: Clement
+  interest: Peinture et sculpture, Manga et anime, Code de la route, Musique
   money: 0
   score: 0
-  image: {fileID: 0}
-  answers: []
+  image: {fileID: 21300000, guid: ff63bff28d9c2f94888ce0b4ca5ac32b, type: 3}
+  answers:
+  - answer: Enigma
+    isTrue: 1
+  - answer: Sandro Botticelli
+    isTrue: 1
+  - answer: Claude Monet
+    isTrue: 1
+  - answer: 4
+    isTrue: 1
+  - answer: de papier
+    isTrue: 0
+  - answer: The Beatles
+    isTrue: 1
+  - answer: Violon, Violon, Alto, Violoncelle
+    isTrue: 1
+  - answer: "Cl\xE9 d'Ut"
+    isTrue: 1
+  - answer: Rhum, mente, limonade, sucre de canne, citron vert
+    isTrue: 1
+  - answer: Image
+    isTrue: 1
+  - answer: 206
+    isTrue: 1
+  - answer: Don Rosa
+    isTrue: 0
+  - answer: Detective Comics
+    isTrue: 1
+  - answer: Your Name
+    isTrue: 1
+  - answer: Weekly Shonen Jump
+    isTrue: 1
+  - answer: Tardigrade
+    isTrue: 1
+  - answer: La baleine bleue
+    isTrue: 1
+  - answer: Lionel Jospin
+    isTrue: 1
+  - answer: 100 km/h
+    isTrue: 0
+  - answer: "M\xE9sopotamie"
+    isTrue: 1
+  - answer: Canberra
+    isTrue: 1
+  - answer: Existentialisme
+    isTrue: 1
+  - answer: Le Parsec
+    isTrue: 1
+  - answer: Guillaume Apollinaire
+    isTrue: 0
+  - answer: La Vitamine C
+    isTrue: 0
+  - answer: "Franchement \xE7a va"
+    isTrue: 0
