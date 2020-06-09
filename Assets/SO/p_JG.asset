@@ -18,9 +18,9 @@ MonoBehaviour:
   - "G\xE9ographie"
   - Musique
   - Code de la route
-  money: 2500
+  money: 0
   score: 0
-  image: {fileID: 21300000, guid: 4303b98cfc45f7c45b5ca7948a68303d, type: 3}
+  image: {fileID: 21300000, guid: 62ada897c92008f47a4a9e1aa45dae35, type: 3}
   answers:
   - answer: Je ne sais pas
     isTrue: 0

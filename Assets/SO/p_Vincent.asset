@@ -18,9 +18,9 @@ MonoBehaviour:
   - BD et comics
   - Musique
   - Cinema
-  money: 2500
-  score: 0
-  image: {fileID: 21300000, guid: 9057f3939c10b554d8bc4a2360028f58, type: 3}
+  money: 4500
+  score: 4
+  image: {fileID: 21300000, guid: 47840c2ed203eda42a0f1138bf554044, type: 3}
   answers:
   - answer: X
     isTrue: 0
