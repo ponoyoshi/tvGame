@@ -14,7 +14,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fullName: Margaux
   interest: Informatique, Monde animal, Nourriture et nutrition, Code de la route
-  money: 0
+  money: 2500
   score: 0
   image: {fileID: 21300000, guid: 767c84af97a8a3f45aa726747a68b77d, type: 3}
-  answers: []
+  answers:
+  - answer: Enigma
+    isTrue: 1
+  - answer: Sandro Botticelli
+    isTrue: 1
+  - answer: Claude Monet
+    isTrue: 1
+  - answer: 6
+    isTrue: 0
+  - answer: "...fa\xE7on puzzle"
+    isTrue: 1
+  - answer: The Beatles
+    isTrue: 1
+  - answer: violons et violoncelles
+    isTrue: 0
+  - answer: "cl\xE9 de fa"
+    isTrue: 0
+  - answer: Citron, sucre ou sirop de sucre, rhum limonade, menthe
+    isTrue: 1
+  - answer: Image
+    isTrue: 1
+  - answer: 206
+    isTrue: 1
+  - answer: X
+    isTrue: 0
+  - answer: direct comics
+    isTrue: 0
+  - answer: le chateau ambulant ?
+    isTrue: 0
+  - answer: Weekly Shonen Jump
+    isTrue: 1
+  - answer: "Un micro ver, j'ai oubli\xE9 le nom"
+    isTrue: 0
+  - answer: La baleine bleue
+    isTrue: 1
+  - answer: Lionel Jospin
+    isTrue: 1
+  - answer: 110 km/h
+    isTrue: 1
+  - answer: Asie
+    isTrue: 0
+  - answer: Canberra
+    isTrue: 1
+  - answer: Sartrienne ?
+    isTrue: 0
+  - answer: "vitesse de la lumi\xE8re"
+    isTrue: 0
+  - answer: X
+    isTrue: 0
+  - answer: La Vitamine C
+    isTrue: 0
+  - answer: Oui
+    isTrue: 1

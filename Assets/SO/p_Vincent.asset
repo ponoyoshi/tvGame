@@ -14,7 +14,60 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fullName: Vincent
   interest: "Peinture et Sculpture, BD et Comics, Cin\xE9ma, Musique"
-  money: 0
+  money: 2500
   score: 0
   image: {fileID: 21300000, guid: 9057f3939c10b554d8bc4a2360028f58, type: 3}
-  answers: []
+  answers:
+  - answer: X
+    isTrue: 0
+  - answer: Sandro Botticelli
+    isTrue: 1
+  - answer: Claude Monet
+    isTrue: 1
+  - answer: 6
+    isTrue: 0
+  - answer: de papier
+    isTrue: 0
+  - answer: The Beatles
+    isTrue: 1
+  - answer: X
+    isTrue: 0
+  - answer: X
+    isTrue: 0
+  - answer: "Menthe, glace pil\xE9e, rhum, sucre de canne"
+    isTrue: 0
+  - answer: Image
+    isTrue: 1
+  - answer: 225
+    isTrue: 0
+  - answer: Walter Disney
+    isTrue: 0
+  - answer: X
+    isTrue: 0
+  - answer: "Mononok\xE9 ?"
+    isTrue: 0
+  - answer: X
+    isTrue: 0
+  - answer: Jsp mais azy on va dire les moustiques ces fdp
+    isTrue: 0
+  - answer: Baleine blanche ?
+    isTrue: 0
+  - answer: Lionel Jospin
+    isTrue: 1
+  - answer: 90 km/h
+    isTrue: 0
+  - answer: X
+    isTrue: 0
+  - answer: Canberra
+    isTrue: 1
+  - answer: X
+    isTrue: 0
+  - answer: "L'ann\xE9e-lumi\xE8re"
+    isTrue: 0
+  - answer: "Moli\xE8re"
+    isTrue: 0
+  - answer: La Vitamine D
+    isTrue: 1
+  - answer: "Difficult\xE9 avanc\xE9e mais pas non plus experte. Tr\xE8s raisonnable,
+      et je suis content de pas avoir eu r\xE9ponse \xE0 tout."
+    isTrue: 0

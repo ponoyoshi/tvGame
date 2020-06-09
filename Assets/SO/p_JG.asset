@@ -15,8 +15,58 @@ MonoBehaviour:
   fullName: JG
   interest: "Histoire du Monde, G\xE9ographie, Musique, Code de la route"
   money: 2500
-  score: 1
+  score: 0
   image: {fileID: 21300000, guid: 4303b98cfc45f7c45b5ca7948a68303d, type: 3}
   answers:
-  - answer: Good
+  - answer: Je ne sais pas
+    isTrue: 0
+  - answer: Milo
+    isTrue: 0
+  - answer: Claude Monet
+    isTrue: 1
+  - answer: "6 ou 9 je suis pas s\xFBr pour les 3 derniers"
+    isTrue: 0
+  - answer: X
+    isTrue: 0
+  - answer: Michael Jackson
+    isTrue: 0
+  - answer: Violon, Violoncelle, Basse, Contrebasse
+    isTrue: 0
+  - answer: La
+    isTrue: 0
+  - answer: citron vert, menthe, rhum, sucre de canne
+    isTrue: 0
+  - answer: zip
+    isTrue: 0
+  - answer: 150
+    isTrue: 0
+  - answer: X
+    isTrue: 0
+  - answer: Detroit city
+    isTrue: 0
+  - answer: "Princesse mononok\xE9"
+    isTrue: 0
+  - answer: Weekly Shonen Jump
+    isTrue: 1
+  - answer: Le tardigrade
+    isTrue: 1
+  - answer: La baleine
+    isTrue: 0
+  - answer: X
+    isTrue: 0
+  - answer: 100 km/h
+    isTrue: 0
+  - answer: "M\xE9sopotamie"
+    isTrue: 1
+  - answer: Canberra
+    isTrue: 1
+  - answer: X
+    isTrue: 0
+  - answer: "L'ann\xE9e-lumi\xE8re"
+    isTrue: 0
+  - answer: X
+    isTrue: 0
+  - answer: La Vitamine D
+    isTrue: 1
+  - answer: Un peu dur
     isTrue: 1

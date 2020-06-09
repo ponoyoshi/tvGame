@@ -18,5 +18,55 @@ MonoBehaviour:
   score: 0
   image: {fileID: 21300000, guid: ee0afb647c1b31f4f82c9fe839eb8881, type: 3}
   answers:
-  - answer: Bad
+  - answer: Enigma
+    isTrue: 1
+  - answer: Michel-Ange
+    isTrue: 0
+  - answer: X
+    isTrue: 0
+  - answer: 6 (7 si on compte le holiday special)
+    isTrue: 0
+  - answer: X
+    isTrue: 0
+  - answer: The Beatles
+    isTrue: 1
+  - answer: Violon, Violon, Alto, Violoncelle
+    isTrue: 1
+  - answer: "Cl\xE9 d'Ut"
+    isTrue: 1
+  - answer: Feuilles de Menthe, Rhum, Sucre, Citron Vert
+    isTrue: 0
+  - answer: fichier audio
+    isTrue: 0
+  - answer: 200
+    isTrue: 0
+  - answer: Carl Barks
+    isTrue: 1
+  - answer: X
+    isTrue: 0
+  - answer: euh, Ghost in the Shell?
+    isTrue: 0
+  - answer: Weekly Shonen Jump
+    isTrue: 1
+  - answer: X
+    isTrue: 0
+  - answer: Sperm Whale! (merci Dwarf Fortress)
+    isTrue: 0
+  - answer: Lionel Jospin
+    isTrue: 1
+  - answer: 30 km/h
+    isTrue: 0
+  - answer: "M\xE9sopotamie"
+    isTrue: 1
+  - answer: Melbourne
+    isTrue: 0
+  - answer: X
+    isTrue: 0
+  - answer: Le Parsec
+    isTrue: 1
+  - answer: X
+    isTrue: 0
+  - answer: "La m\xE9lanine"
+    isTrue: 0
+  - answer: "\xE7a va"
     isTrue: 0
