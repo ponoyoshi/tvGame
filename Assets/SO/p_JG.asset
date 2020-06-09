@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: p_JG
   m_EditorClassIdentifier: 
   fullName: JG
-  interest: "Histoire du Monde, G\xE9ographie, Musique, Code de la route"
+  interest:
+  - Histoire du Monde
+  - "G\xE9ographie"
+  - Musique
+  - Code de la route
   money: 2500
   score: 0
   image: {fileID: 21300000, guid: 4303b98cfc45f7c45b5ca7948a68303d, type: 3}

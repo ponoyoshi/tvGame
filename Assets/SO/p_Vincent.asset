@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: p_Vincent
   m_EditorClassIdentifier: 
   fullName: Vincent
-  interest: "Peinture et Sculpture, BD et Comics, Cin\xE9ma, Musique"
+  interest:
+  - Peinture et sculpture
+  - BD et comics
+  - Musique
+  - Cinema
   money: 2500
   score: 0
   image: {fileID: 21300000, guid: 9057f3939c10b554d8bc4a2360028f58, type: 3}
