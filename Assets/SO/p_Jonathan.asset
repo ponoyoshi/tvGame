@@ -14,9 +14,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fullName: Jonathan
   interest: Astronomie, Informatique, Monde animal, Manga et anime
-  money: 2500
-  score: 1
+  money: 12500
+  score: 11
   image: {fileID: 21300000, guid: 2a589c2ce53d2f7439425ac231c5b4ee, type: 3}
   answers:
-  - answer: Good
+  - answer: Enigma
+    isTrue: 1
+  - answer: Sandro Botticelli
+    isTrue: 1
+  - answer: Vincent Van Gogh
+    isTrue: 0
+  - answer: 6
+    isTrue: 0
+  - answer: X
+    isTrue: 0
+  - answer: The Beatles
+    isTrue: 1
+  - answer: Violon, Violoncelle, Contrebasse, Alto
+    isTrue: 0
+  - answer: Sol
+    isTrue: 0
+  - answer: Citron, Alcohol, Menthe
+    isTrue: 0
+  - answer: Image
+    isTrue: 1
+  - answer: 216
+    isTrue: 0
+  - answer: X
+    isTrue: 0
+  - answer: Detective Comics
+    isTrue: 1
+  - answer: Princesse Mononoke
+    isTrue: 0
+  - answer: Weekly Shonen Jump
+    isTrue: 1
+  - answer: Tardigrade
+    isTrue: 1
+  - answer: La baleine bleue
+    isTrue: 1
+  - answer: Valery Giscard D'Estaing
+    isTrue: 0
+  - answer: 110 km/h
+    isTrue: 1
+  - answer: "M\xE9sopotamie"
+    isTrue: 1
+  - answer: Canberra
+    isTrue: 1
+  - answer: Cynisme
+    isTrue: 0
+  - answer: Le Parsec
+    isTrue: 1
+  - answer: Voltaire
+    isTrue: 1
+  - answer: La Vitamine D
+    isTrue: 1
+  - answer: Oui
     isTrue: 1
