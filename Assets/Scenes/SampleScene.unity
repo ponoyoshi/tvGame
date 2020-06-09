@@ -4217,6 +4217,11 @@ PrefabInstance:
     - target: {fileID: 4126619434545745751, guid: 985979412ae9a1a48b8a35a9ab2002ce,
         type: 3}
       propertyPath: currentQuestion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4126619434545745751, guid: 985979412ae9a1a48b8a35a9ab2002ce,
+        type: 3}
+      propertyPath: currentMoney
       value: 5000
       objectReference: {fileID: 0}
     - target: {fileID: 4126619434545745748, guid: 985979412ae9a1a48b8a35a9ab2002ce,
