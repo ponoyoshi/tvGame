@@ -14,9 +14,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fullName: Florine
   interest: "Peinture et Sculpture, Monde animal, Langue Fran\xE7aise, Cin\xE9ma"
-  money: 2500
+  money: 0
   score: 0
   image: {fileID: 21300000, guid: 656bf6f265fbcbf44bf12b47e7fa32f9, type: 3}
   answers:
-  - answer: Bad
+  - answer: Decryptage machina
     isTrue: 0
+  - answer: Sandro Botticelli
+    isTrue: 1
+  - answer: Claude Monet
+    isTrue: 1
+  - answer: 6
+    isTrue: 0
+  - answer: "...fa\xE7on puzzle"
+    isTrue: 1
+  - answer: Green day
+    isTrue: 0
+  - answer: Un orchestre
+    isTrue: 0
+  - answer: "Cl\xE9 de sol"
+    isTrue: 0
+  - answer: "Rhum, menthe, glace pill\xE9e, eau gazeuse"
+    isTrue: 1
+  - answer: Raw
+    isTrue: 0
+  - answer: 146
+    isTrue: 0
+  - answer: Walt disney
+    isTrue: 0
+  - answer: Detective Comics
+    isTrue: 1
+  - answer: "Ch\xE2teau ambulant"
+    isTrue: 0
+  - answer: Weekly shonen jump
+    isTrue: 1
+  - answer: Un alien
+    isTrue: 0
+  - answer: Mammouth
+    isTrue: 0
+  - answer: Jean-Marie Le Pen
+    isTrue: 0
+  - answer: 100 km/h
+    isTrue: 0
+  - answer: Europe
+    isTrue: 0
+  - answer: Canberra
+    isTrue: 1
+  - answer: Cubisme
+    isTrue: 0
+  - answer: "L'ann\xE9e-lumi\xE8re"
+    isTrue: 0
+  - answer: Fma
+    isTrue: 0
+  - answer: "La S\xE9rotonine"
+    isTrue: 0
+  - answer: Oui
+    isTrue: 1
