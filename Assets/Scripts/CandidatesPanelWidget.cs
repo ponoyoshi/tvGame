@@ -9,6 +9,8 @@ public class CandidatesPanelWidget : MonoBehaviour
     [SerializeField] private GameManager gameManager = null;
     [SerializeField] private CommonPanelWidget commonPanelWidget = null;
 
+    [SerializeField] private GameObject endRoundButton = null;
+
     [SerializeField] private CandidateTileWidget[] currentCandidate = null;
     [SerializeField] private Animator animator = null;
     [SerializeField] private Image rewardPopupBackground = null;
@@ -49,6 +51,8 @@ public class CandidatesPanelWidget : MonoBehaviour
 
     private IEnumerator UpdateMoneyAfterDelay()
     {
+        endRoundButton.SetActive(false);
+
         yield return new WaitForSeconds(5.5f);
 
         animator.SetTrigger("Reward");
@@ -65,6 +69,7 @@ public class CandidatesPanelWidget : MonoBehaviour
         yield return new WaitForSeconds(1.2f);
 
         gameManager.OnRoundEnded(correctPredictions, incorrectPredictions);
+        endRoundButton.SetActive(true);
     }
 
     public void SetCandidateTiles()

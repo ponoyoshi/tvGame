@@ -566,6 +566,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
+  commonPanelWidget: {fileID: 0}
+  endRoundButton: {fileID: 3979662372298360837}
   currentCandidate:
   - {fileID: 8248016470879339942}
   - {fileID: 6663218050429878625}
