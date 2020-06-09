@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private CommonPanelWidget commonPanelWidget = null;
     [SerializeField] private CandidatesPanelWidget candidatePanelWidget = null;
-    public int currentQuestion = 0;
+    [HideInInspector] public int currentQuestion = 0;
     public int currentMoney = 0;
     public int MONEY_MULTIPLE = 50;
     public int MONEY_DIVIDE_RATIO = 2;
