@@ -1,18 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class MainMenuProfiles : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private DataManager dataManager;
+    private void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        foreach(var profile in dataManager.profiles)
+        {
+            GameObject go = new GameObject();      
+            go.AddComponent(typeof(Image));
+            go.GetComponent<Image>().sprite = profile.image;       
+            go.transform.parent = this.transform;
+            go.transform.localScale = new Vector3(1,1,1);
+        }
     }
 }
