@@ -88,7 +88,7 @@ public class CandidatesPanelWidget : MonoBehaviour
 
     public void SetCandidateTiles()
     {
-        Profile[] profiles = dataManager.GetRandomProfiles();
+        Profile[] profiles = dataManager.GetRandomPickedProfiles(5);
         for (int i = 0; i < currentCandidate.Length; i++)
         {
             currentCandidate[i].SetCurrentCandidate(profiles[i]);
