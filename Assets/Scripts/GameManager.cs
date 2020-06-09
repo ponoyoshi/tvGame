@@ -40,6 +40,9 @@ public class GameManager : MonoBehaviour
         else if (incorrectPredictions > 0)
         {
             currentMoney -= MONEY_LOST_PER_MISTAKE * incorrectPredictions;
+
+            // cap money to 0
+            currentMoney = currentMoney <= 0 ? 0 : currentMoney;
         }
         else
         {
