@@ -8,7 +8,7 @@ using System.Linq;
 
 public class DataManager : MonoBehaviour
 {
-    private List<Profile> profiles = new List<Profile>();
+    [SerializeField] private List<Profile> profiles = new List<Profile>();
     public Profile[] GetRandomProfiles()
     {
         Profile[] returnedProfiles = new Profile[5];
