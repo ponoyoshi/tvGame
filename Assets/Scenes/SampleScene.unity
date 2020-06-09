@@ -916,6 +916,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerMoneyText: {fileID: 1259903182}
   currentQuestionText: {fileID: 371057833}
+  animator: {fileID: 1158337862}
 --- !u!95 &1158337862
 Animator:
   serializedVersion: 3
@@ -1112,6 +1113,11 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1842071414}
+    - target: {fileID: 5891490520750690530, guid: 7b282ea35a0f7df4d8cdde3f9ab86d98,
+        type: 3}
+      propertyPath: commonPanelWidget
+      value: 
+      objectReference: {fileID: 1158337861}
     - target: {fileID: 8097345709785793756, guid: 7b282ea35a0f7df4d8cdde3f9ab86d98,
         type: 3}
       propertyPath: m_LocalPosition.x

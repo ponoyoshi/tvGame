@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class CandidatesPanelWidget : MonoBehaviour
 {
     [SerializeField] private GameManager gameManager = null;
+    [SerializeField] private CommonPanelWidget commonPanelWidget = null;
 
     [SerializeField] private CandidateTileWidget[] currentCandidate = null;
     [SerializeField] private Animator animator = null;
@@ -56,6 +57,10 @@ public class CandidatesPanelWidget : MonoBehaviour
         {
             currentCandidate[i].HideTile();
         }
+
+        yield return new WaitForSeconds(1.5f);
+
+        commonPanelWidget.animator.SetTrigger("ShowNewQuestion");
 
         yield return new WaitForSeconds(1.5f);
 

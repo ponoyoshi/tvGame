@@ -7,6 +7,7 @@ public class CommonPanelWidget : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI playerMoneyText = null;
     [SerializeField] private TextMeshProUGUI currentQuestionText = null;
+    [SerializeField] public Animator animator = null;
 
     public void SetCurrentQuestion(string question)
     {
