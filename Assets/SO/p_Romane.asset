@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: p_Romane
   m_EditorClassIdentifier: 
   fullName: Romane
-  interest: "Litt\xE9rature, Peinture et Sculpture, Philosophie et Sciences Sociales,
-    Manga et anime"
+  interest:
+  - "Litt\xE9rature"
+  - Peinture et Sculpture
+  - Philosophie
+  - Manga et Anime
   money: 2500
   score: 0
   image: {fileID: 21300000, guid: 11a067d33c125174f8c507002468c24b, type: 3}
