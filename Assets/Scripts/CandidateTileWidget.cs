@@ -14,6 +14,7 @@ public class CandidateTileWidget : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scoreText = null;
     [SerializeField] private TextMeshProUGUI moneyText = null;
     [SerializeField] private TextMeshProUGUI answerText = null;
+    [SerializeField] private TextMeshProUGUI answerStatusText = null;
     [SerializeField] private Profile currentCandidate = null;
     [SerializeField] private Animator animator = null;
 
@@ -52,6 +53,7 @@ public class CandidateTileWidget : MonoBehaviour
         scoreText.text          = score.ToString();
         moneyText.text          = money.ToString();
         answerText.text         = answer;
+        answerStatusText.text   = currentCandidate.answers[gameManager.currentQuestion].isTrue ? "Réponse correcte" : "Mauvaise réponse";
 
         currentUpvoteScore = 0;
         ResetDefaultVisual();
