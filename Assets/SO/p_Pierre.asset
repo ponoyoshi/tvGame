@@ -14,7 +14,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fullName: Pierre
   interest: "Informatique, Monde animal, Langue Fran\xE7aise, Mat\xE9riel \xE9lectronique"
-  money: 0
+  money: 2500
   score: 0
   image: {fileID: 21300000, guid: a78c6e60909f8ac47846626d9babe590, type: 3}
-  answers: []
+  answers:
+  - answer: "Robert, \xE7a lui va bien"
+    isTrue: 0
+  - answer: X
+    isTrue: 0
+  - answer: Claude Monet
+    isTrue: 1
+  - answer: 9
+    isTrue: 0
+  - answer: de chair ?? x)
+    isTrue: 0
+  - answer: The Beatles
+    isTrue: 1
+  - answer: 2 guitares, 1 basse, 1 violon
+    isTrue: 0
+  - answer: Do
+    isTrue: 0
+  - answer: Citron
+    isTrue: 0
+  - answer: "Une photo de tr\xE8s haute qualit\xE9"
+    isTrue: 1
+  - answer: 200 et quelques
+    isTrue: 0
+  - answer: Disney
+    isTrue: 0
+  - answer: D... Comics
+    isTrue: 0
+  - answer: Totoro ?
+    isTrue: 0
+  - answer: Weekly Shonen Jump
+    isTrue: 1
+  - answer: Tardigrade
+    isTrue: 1
+  - answer: "Baleine \xE0 bosse"
+    isTrue: 0
+  - answer: Jean-Marie Le Pen
+    isTrue: 0
+  - answer: 70 km/h
+    isTrue: 0
+  - answer: "M\xE9sopotamie"
+    isTrue: 1
+  - answer: Melbourne
+    isTrue: 0
+  - answer: X
+    isTrue: 0
+  - answer: "L'ann\xE9e-lumi\xE8re"
+    isTrue: 0
+  - answer: Voltaire
+    isTrue: 1
+  - answer: La Vitamine D
+    isTrue: 1
+  - answer: "\xE7a va, mais j'ai pas une culture de ouf"
+    isTrue: 0
