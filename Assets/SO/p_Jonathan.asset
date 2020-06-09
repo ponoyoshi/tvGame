@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fullName: Jonathan
   interest: Astronomie, Informatique, Monde animal, Manga et anime
-  money: 12500
-  score: 11
+  money: 2500
+  score: 0
   image: {fileID: 21300000, guid: 2a589c2ce53d2f7439425ac231c5b4ee, type: 3}
   answers:
   - answer: Enigma
