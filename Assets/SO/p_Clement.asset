@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fullName: Clement
   interest: Peinture et sculpture, Manga et anime, Code de la route, Musique
-  money: 0
+  money: 2500
   score: 0
   image: {fileID: 21300000, guid: ff63bff28d9c2f94888ce0b4ca5ac32b, type: 3}
   answers:
