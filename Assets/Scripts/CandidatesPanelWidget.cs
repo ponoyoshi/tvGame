@@ -62,7 +62,7 @@ public class CandidatesPanelWidget : MonoBehaviour
 
         commonPanelWidget.animator.SetTrigger("ShowNewQuestion");
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1.2f);
 
         gameManager.OnRoundEnded(correctPredictions, incorrectPredictions);
     }
