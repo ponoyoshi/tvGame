@@ -50,7 +50,7 @@ public class CandidateTileWidget : MonoBehaviour
         profilePicture.sprite   = picture;
         nameText.text           = name;
 
-        for (int i = 0; i<= preferencesText.Length; i++)
+        for (int i = 0; i < preferencesText.Length ; i++)
         {
             preferencesText[i].text = preferences[i];
         }
