@@ -14,7 +14,60 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fullName: "Th\xE9o"
   interest: Alcools, BD et Comics, Manga et anime, Musique
-  money: 0
+  money: 2500
   score: 0
   image: {fileID: 21300000, guid: dcbd91763d69555449fd7462a72ff561, type: 3}
-  answers: []
+  answers:
+  - answer: Enigma
+    isTrue: 1
+  - answer: Milo
+    isTrue: 0
+  - answer: Claude Monet
+    isTrue: 1
+  - answer: 3
+    isTrue: 0
+  - answer: "d\xE9acharn\xE9s"
+    isTrue: 0
+  - answer: The Beatles
+    isTrue: 1
+  - answer: Violon, Violon, Alto, Violoncelle
+    isTrue: 1
+  - answer: "Cl\xE9 d'Ut"
+    isTrue: 1
+  - answer: Rhum blanc, jus de citron citron, menthe, sucre et de l'eau
+    isTrue: 0
+  - answer: Image
+    isTrue: 1
+  - answer: 256
+    isTrue: 0
+  - answer: Walt Disney
+    isTrue: 0
+  - answer: Dumb Credit
+    isTrue: 0
+  - answer: Your Name
+    isTrue: 1
+  - answer: Weekly Shonen Jump
+    isTrue: 1
+  - answer: Tardigrade
+    isTrue: 1
+  - answer: Elephant
+    isTrue: 0
+  - answer: Bayrou
+    isTrue: 0
+  - answer: 100 km/h
+    isTrue: 0
+  - answer: Asie orientale
+    isTrue: 0
+  - answer: Sydney
+    isTrue: 0
+  - answer: Sceptique
+    isTrue: 0
+  - answer: Le Parsec
+    isTrue: 1
+  - answer: Alexandre Dumas
+    isTrue: 0
+  - answer: La Vitamine D
+    isTrue: 1
+  - answer: "Non je suis juste mauvais. Du coup j'ai parfois r\xE9pondu des trucs
+      un peu troll, d\xE9sol\xE9 :D"
+    isTrue: 0

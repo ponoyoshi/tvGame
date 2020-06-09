@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f64d77aecddae64aadc96948fd37d83, type: 3}
-  m_Name: p_Vincent
+  m_Name: p__Vincent
   m_EditorClassIdentifier: 
   fullName: Vincent
   interest: "Peinture et Sculpture, BD et Comics, Cin\xE9ma, Musique"
