@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: p_Paul
   m_EditorClassIdentifier: 
   fullName: Paul
-  interest: []
+  interest:
+  - Musique
+  - "Mat\xE9riel \xE9lectronique"
+  - Politique
+  - "Cin\xE9ma"
   money: 2500
   score: 0
   image: {fileID: 21300000, guid: 5e0264335027b3645abd338ae3b746e0, type: 3}
