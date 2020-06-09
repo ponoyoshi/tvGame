@@ -16,6 +16,7 @@ public class DataManager : MonoBehaviour
         var values = Enumerable.Range(0, profiles.Count).OrderBy(x => rng.Next()).ToArray();
         for(int i = 0; i < 5; i++)
             returnedProfiles[i] = profiles[values[i]];
+            
         
         return returnedProfiles;
     }

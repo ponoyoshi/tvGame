@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class CandidatesPanelWidget : MonoBehaviour
 {
     [SerializeField] private GameManager gameManager = null;
+    [SerializeField] private DataManager dataManager = null;
+
     [SerializeField] private CommonPanelWidget commonPanelWidget = null;
 
     [SerializeField] private GameObject endRoundButton = null;
@@ -86,9 +88,10 @@ public class CandidatesPanelWidget : MonoBehaviour
 
     public void SetCandidateTiles()
     {
+        Profile[] profiles = dataManager.GetRandomProfiles();
         for (int i = 0; i < currentCandidate.Length; i++)
         {
-            currentCandidate[i].SetFakeCurrentCandidate();
+            currentCandidate[i].SetCurrentCandidate(profiles[i]);
         }
     }
 
