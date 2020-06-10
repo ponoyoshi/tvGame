@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private CommonPanelWidget commonPanelWidget = null;
     [SerializeField] private CandidatesPanelWidget candidatePanelWidget = null;
+    [SerializeField] private FindCheaterManager cheaterManager = null;
     [HideInInspector] public int currentQuestion = 0;
     public int currentMoney = 0;
     public int MONEY_MULTIPLE = 50;
@@ -23,7 +24,15 @@ public class GameManager : MonoBehaviour
     public void SetCurrentQuestion()
     {
         currentQuestion++;
-        commonPanelWidget.SetCurrentQuestion(questions[currentQuestion]);
+        if (currentQuestion < questions.Count)
+        {
+            commonPanelWidget.SetCurrentQuestion(questions[currentQuestion], currentQuestion+1);
+
+        }
+        else
+        {
+            cheaterManager.SetCheaterPhase();
+        }
     }
 
     public void SetMoney(int correctPredictions, int incorrectPredictions)

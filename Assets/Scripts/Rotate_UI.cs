@@ -34,7 +34,10 @@ public class Rotate_UI : MonoBehaviour
             cosValu %= 360;
             float newScale = 1 + (addScale * (Mathf.Cos((cosValu * Mathf.PI) / 180) + 1) / 2);
             Rtrans.localScale = new Vector3(newScale, newScale,1);
-            textScaleTransform.localScale = new Vector3(newScale, newScale, 1);
+            if (textScaleTransform != null)
+            {
+                textScaleTransform.localScale = new Vector3(newScale, newScale, 1);
+            }
         }
     }
 
@@ -47,6 +50,9 @@ public class Rotate_UI : MonoBehaviour
         PointerOn = false;
         cosValu = 0;
         Rtrans.localScale = new Vector3(1, 1, 1);
-        textScaleTransform.localScale = new Vector3(1, 1, 1);
+        if (textScaleTransform != null)
+        {
+            textScaleTransform.localScale = new Vector3(1, 1, 1);
+        }
     }
 }
