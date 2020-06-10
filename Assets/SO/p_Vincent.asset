@@ -73,5 +73,5 @@ MonoBehaviour:
   - answer: La Vitamine D
     isTrue: 1
   - answer: "Difficult\xE9 avanc\xE9e mais pas non plus experte. Tr\xE8s raisonnable,
-      et je suis content de pas avoir eu r\xE9ponse \xE0 tout."
+      et je suis content de pas avoir eu r\xE9ponse \xE0 tout. \n"
     isTrue: 0
