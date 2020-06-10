@@ -553,8 +553,8 @@ MonoBehaviour:
   UPVOTE_COLOR: {r: 0.8443396, g: 1, b: 0.8583796, a: 1}
   DOWNVOTE_COLOR: {r: 1, g: 0.75686276, b: 0.75, a: 1}
   DEFAULT_COLOR: {r: 1, g: 1, b: 1, a: 1}
-  goodAnswerSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  badAnswerSprite: {fileID: 21300000, guid: 52a3161c309f51a41b012df29dce8477, type: 3}
+  goodAnswerSprite: {fileID: 21300000, guid: 9cc9da981be19f54f80c8b1636462a55, type: 3}
+  badAnswerSprite: {fileID: 21300000, guid: 51a94ca0d77efb648b8e9df71d0a2e54, type: 3}
 --- !u!95 &4221159273333313624
 Animator:
   serializedVersion: 3
