@@ -18,8 +18,8 @@ MonoBehaviour:
   - BD et comics
   - Manga et anime
   - Musique
-  money: 1500
-  score: 2
+  money: 2500
+  score: 0
   image: {fileID: 21300000, guid: d959266d753866d4bbf6dc3c8f668096, type: 3}
   answers:
   - answer: Enigma

@@ -18,8 +18,8 @@ MonoBehaviour:
   - Manga et anime
   - Code de la route
   - Musique
-  money: 10500
-  score: 8
+  money: 2500
+  score: 0
   image: {fileID: 21300000, guid: 1db45af015c503f41b46949cb0ad34cd, type: 3}
   answers:
   - answer: Enigma

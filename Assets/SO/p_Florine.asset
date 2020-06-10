@@ -18,8 +18,8 @@ MonoBehaviour:
   - Monde animal
   - "Cin\xE9ma"
   - "Langue fran\xE7aise"
-  money: 0
-  score: 4
+  money: 2500
+  score: 0
   image: {fileID: 21300000, guid: c4d53edf801bdb3418ccaf566e98906a, type: 3}
   answers:
   - answer: Decryptage machina

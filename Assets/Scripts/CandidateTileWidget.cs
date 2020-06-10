@@ -29,12 +29,15 @@ public class CandidateTileWidget : MonoBehaviour
     [SerializeField] private Sprite goodAnswerSprite = null;
     [SerializeField] private Sprite badAnswerSprite = null;
 
+    private AudioSource source;
+
     private const int MONEY_LOST_PER_MISTAKE = 1000;
     private const int MONEY_GAINED_PER_SUCCESS = 1000;
 
     private void Start()
     {
         SetFakeCurrentCandidate();
+        source = GetComponent<AudioSource>();
     }
 
     public void SetFakeCurrentCandidate()
@@ -104,18 +107,21 @@ public class CandidateTileWidget : MonoBehaviour
     {
         currentUpvoteScore = 2;
         SetUpdvotedVisual();
+        source.Play();
     }
 
     public void OnDownvotePressed()
     {
         currentUpvoteScore = 1;
         SetDownvotedVisual();
+        source.Play();
     }
 
     public void OnCancelPressed()
     {
         currentUpvoteScore = 0;
         ResetDefaultVisual();
+        source.Play();
     }
 
     public void onRoundEnded()

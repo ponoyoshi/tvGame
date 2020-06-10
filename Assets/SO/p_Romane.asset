@@ -18,8 +18,8 @@ MonoBehaviour:
   - Peinture et Sculpture
   - Philosophie
   - Manga et Anime
-  money: 2000
-  score: 2
+  money: 2500
+  score: 0
   image: {fileID: 21300000, guid: 4c0e088b65f98a143ad452e031df81c4, type: 3}
   answers:
   - answer: Enigma
