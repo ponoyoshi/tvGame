@@ -144,6 +144,18 @@ public class CandidatesPanelWidget : MonoBehaviour
             rewardPopupDescription.text = gain.ToString();
             win = false;
         }
+        else if (incorrectPredictions == 0 && correctPredictions == 0)
+        {
+            rewardPopupTitle.enabled = true;
+            rewardPopupBackground.sprite = negativePopupBackground;
+            rewardPopupTitle.text = "Vous gagnez :";
+
+
+            gain = 0;
+
+            rewardPopupDescription.text = gain.ToString();
+            win = false;
+        }
         else
         {
             rewardPopupTitle.enabled = true;
