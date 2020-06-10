@@ -8,21 +8,25 @@ public class MainMenuProfileBehaviour : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine();
+        StartDelayCoroutine();
     }
 
-    private void StartCoroutine()
+    private void StartDelayCoroutine()
     {
         StartCoroutine(PlayAnimationAfterDelay());
     }
 
     private IEnumerator PlayAnimationAfterDelay()
     {
-        yield return new WaitForSeconds(0.64516f);
-        if (Random.Range(0, 1) >= 0.5)
+        yield return new WaitForSeconds(0.32258064516f);
+
+        if (Random.Range(0f, 1f) >= 0.5f)
         {
             animator.SetTrigger("Scale");
+            Debug.Log("Tick");
         }
+
+        StartDelayCoroutine();
 
     }
 }
