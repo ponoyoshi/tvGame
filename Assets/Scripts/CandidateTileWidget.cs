@@ -85,18 +85,24 @@ public class CandidateTileWidget : MonoBehaviour
     private void SetUpdvotedVisual()
     {
         background.color = UPVOTE_COLOR;
+        animator.ResetTrigger("Unvote");
+        animator.ResetTrigger("Downvote");
         animator.SetTrigger("Upvote");
     }
 
     private void SetDownvotedVisual()
     {
         background.color = DOWNVOTE_COLOR;
+        animator.ResetTrigger("Unvote");
+        animator.ResetTrigger("Upvote");
         animator.SetTrigger("Downvote");
     }
 
     private void ResetDefaultVisual()
     {
         background.color = DEFAULT_COLOR;
+        animator.ResetTrigger("Upvote");
+        animator.ResetTrigger("Downvote");
         animator.SetTrigger("Unvote");
     }
 
