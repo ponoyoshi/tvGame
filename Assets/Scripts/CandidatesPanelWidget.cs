@@ -23,8 +23,19 @@ public class CandidatesPanelWidget : MonoBehaviour
     [SerializeField] private Color POSITIVE_COLOR = Color.green;
     [SerializeField] private Color NEGATIVE_COLOR = Color.red;
 
+    [SerializeField] private AudioClip WinSound = null;
+    [SerializeField] private AudioClip LoseSound = null;
+
     private int correctPredictions = 0;
     private int incorrectPredictions = 0;
+
+    private AudioSource source;
+    private bool win = false;
+
+    private void Start()
+    {
+        source = GetComponent<AudioSource>();
+    }
 
     public void OnEndRoundButtonPressed()
     {
@@ -71,6 +82,17 @@ public class CandidatesPanelWidget : MonoBehaviour
 
         animator.SetTrigger("Reward");
 
+        if (win == true)
+        {
+            source.clip = WinSound;
+            source.Play();
+        }
+        else if (win == false)
+        {
+            source.clip = LoseSound;
+            source.Play();
+        }
+
         for (int i = 0; i < currentCandidate.Length; i++)
         {
             currentCandidate[i].HideTile();
@@ -104,6 +126,7 @@ public class CandidatesPanelWidget : MonoBehaviour
             rewardPopupTitle.enabled = false;
             rewardPopupBackground.color = NEGATIVE_COLOR;
             rewardPopupDescription.text = "Gains divisés par deux";
+            win = false;
         }
         else if (incorrectPredictions > 0)
         {
@@ -111,19 +134,24 @@ public class CandidatesPanelWidget : MonoBehaviour
             rewardPopupBackground.color = NEGATIVE_COLOR;
             rewardPopupTitle.text = "Vous perdez :";
 
+
             gain = gameManager.MONEY_LOST_PER_MISTAKE * incorrectPredictions;
 
             rewardPopupDescription.text = gain.ToString();
+            win = false;
         }
         else
         {
             rewardPopupTitle.enabled = true;
             rewardPopupBackground.color = POSITIVE_COLOR;
             rewardPopupTitle.text = "Vous gagnez :";
+            
 
             gain = gameManager.MONEY_GAINED_PER_GOOD_PREDICTION * correctPredictions;
 
             rewardPopupDescription.text = gain.ToString();
+            win = true;
+            
         }
     }
 }
