@@ -9,6 +9,7 @@ public class CandidateTileWidget : MonoBehaviour
     [Header("Properties")]
     [SerializeField] private Image profilePicture = null;
     [SerializeField] private Image background = null;
+    [SerializeField] private Image answerIcon = null;
     [SerializeField] private TextMeshProUGUI nameText = null;
     [SerializeField] private TextMeshProUGUI[] preferencesText = null;
     [SerializeField] private TextMeshProUGUI scoreText = null;
@@ -21,10 +22,12 @@ public class CandidateTileWidget : MonoBehaviour
     [HideInInspector] public int currentUpvoteScore = 0; //0 = null, 1 = downvote, 2 = upvote
     [SerializeField] private GameManager gameManager = null;
 
-    [Header("Colors")]
+    [Header("Parameters")]
     [SerializeField] private Color UPVOTE_COLOR = Color.blue;
     [SerializeField] private Color DOWNVOTE_COLOR = Color.red;
     [SerializeField] private Color DEFAULT_COLOR = Color.grey;
+    [SerializeField] private Sprite goodAnswerSprite = null;
+    [SerializeField] private Sprite badAnswerSprite = null;
 
     private const int MONEY_LOST_PER_MISTAKE = 1000;
     private const int MONEY_GAINED_PER_SUCCESS = 1000;
@@ -59,6 +62,7 @@ public class CandidateTileWidget : MonoBehaviour
         moneyText.text          = money.ToString();
         answerText.text         = answer;
         answerStatusText.text   = currentCandidate.answers[gameManager.currentQuestion].isTrue ? "Réponse correcte" : "Mauvaise réponse";
+        answerIcon.sprite       = currentCandidate.answers[gameManager.currentQuestion].isTrue ? goodAnswerSprite : badAnswerSprite;
 
         currentUpvoteScore = 0;
         ResetDefaultVisual();
