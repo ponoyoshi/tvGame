@@ -21,5 +21,21 @@ public class CheaterProfiles : MonoBehaviour
             go.GetComponent<ProfileButton>().scoreRef.text = profile.money.ToString();
         }
     }
+    public void SetScoreProfile()
+    {
+        foreach (var profile in dataManager.profiles)
+        {
+            GameObject go = Instantiate(goCheaterProfile);
+            go.GetComponent<Image>().sprite = profile.image;
+            go.transform.SetParent(this.transform);
+            go.transform.localScale = new Vector3(1, 1, 1);
+            go.name = profile.name;
+            go.GetComponent<ProfileButton>().name = profile.name;
+            go.GetComponent<ProfileButton>().nameRef.text = profile.fullName;
+            go.GetComponent<ProfileButton>().scoreRef.text = profile.money.ToString();
+            go.GetComponent<Button>().enabled = false;
+            go.GetComponent<Rotate_UI>().enabled = false;
+        }
+    }
 
 }

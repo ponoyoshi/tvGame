@@ -9,11 +9,16 @@ public class FindCheaterManager : MonoBehaviour
     [SerializeField]
     private GameObject RefCandidatesPanel;
     [SerializeField]
+    private GameObject RefVictoryPannel;
+    [SerializeField]
+    private CheaterProfiles victoryProfiles;
+    [SerializeField]
     private GameObject CheaterAsset;
     [SerializeField] private string cheaterPhaseText = "Trouvez le tricheur !";
     [SerializeField] private TextMeshProUGUI questionText = null;
     [SerializeField] private TextMeshProUGUI questionNumText = null;
     [SerializeField] private TextMeshProUGUI questionNumTileText = null;
+    [SerializeField] private TextMeshProUGUI finalScoreText = null;
     [SerializeField] private CheaterProfiles cheaterProfilesRef = null;
     [SerializeField]private string CheaterNamet = "p_Paul";
     [SerializeField] private Animator AnimRevealRef;
@@ -74,5 +79,10 @@ public class FindCheaterManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         AnimRevealRef.SetBool("Reveal", true);
+        yield return new WaitForSeconds(7f);
+        RefVictoryPannel.SetActive(true);
+        victoryProfiles.SetScoreProfile();
+        AnimRevealRef.gameObject.SetActive(false);
+        finalScoreText.text = gameManagerRef.currentMoney.ToString() + " euro !";
     }
 }
