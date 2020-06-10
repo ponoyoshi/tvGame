@@ -4494,32 +4494,12 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7411119509438262219, guid: 7b282ea35a0f7df4d8cdde3f9ab86d98,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 4db212c21f8590244a7ad98d6a50f8a5, type: 3}
-    - target: {fileID: 7411119509438262219, guid: 7b282ea35a0f7df4d8cdde3f9ab86d98,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.15
-      objectReference: {fileID: 0}
     - target: {fileID: 3740539417446554638, guid: 7b282ea35a0f7df4d8cdde3f9ab86d98,
         type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 4db212c21f8590244a7ad98d6a50f8a5, type: 3}
     - target: {fileID: 3740539417446554638, guid: 7b282ea35a0f7df4d8cdde3f9ab86d98,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2154767966652209353, guid: 7b282ea35a0f7df4d8cdde3f9ab86d98,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 4db212c21f8590244a7ad98d6a50f8a5, type: 3}
-    - target: {fileID: 2154767966652209353, guid: 7b282ea35a0f7df4d8cdde3f9ab86d98,
         type: 3}
       propertyPath: m_Volume
       value: 0.15
@@ -4540,6 +4520,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 4db212c21f8590244a7ad98d6a50f8a5, type: 3}
     - target: {fileID: 1903179010464327036, guid: 7b282ea35a0f7df4d8cdde3f9ab86d98,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2154767966652209353, guid: 7b282ea35a0f7df4d8cdde3f9ab86d98,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4db212c21f8590244a7ad98d6a50f8a5, type: 3}
+    - target: {fileID: 2154767966652209353, guid: 7b282ea35a0f7df4d8cdde3f9ab86d98,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7411119509438262219, guid: 7b282ea35a0f7df4d8cdde3f9ab86d98,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4db212c21f8590244a7ad98d6a50f8a5, type: 3}
+    - target: {fileID: 7411119509438262219, guid: 7b282ea35a0f7df4d8cdde3f9ab86d98,
         type: 3}
       propertyPath: m_Volume
       value: 0.15
@@ -4921,6 +4921,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dataManager: {fileID: 549827628}
+  profileGO: {fileID: 5298716758040614765, guid: 76f60aae74ff25e4fa1f02adce363767,
+    type: 3}
 --- !u!114 &2438035760728273182
 MonoBehaviour:
   m_ObjectHideFlags: 0

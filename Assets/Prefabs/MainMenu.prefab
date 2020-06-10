@@ -365,6 +365,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dataManager: {fileID: 0}
+  profileGO: {fileID: 5298716758040614765, guid: 76f60aae74ff25e4fa1f02adce363767,
+    type: 3}
 --- !u!1 &6054139004904021216
 GameObject:
   m_ObjectHideFlags: 0
