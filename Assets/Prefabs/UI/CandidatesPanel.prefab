@@ -256,14 +256,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.43529415, g: 0.86666673, b: 0.1254902, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 813decdcd3b976046ab11f58c32df510, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -779,6 +779,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
+  dataManager: {fileID: 0}
   commonPanelWidget: {fileID: 0}
   endRoundButton: {fileID: 3979662372298360837}
   hideAnswersButton: {fileID: 6019589335310213197}
@@ -880,8 +881,9 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 'Vous Gagnez '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0ada799699f781a4aacb9909265ea91e, type: 2}
+  m_sharedMaterial: {fileID: 6037705269463645887, guid: 0ada799699f781a4aacb9909265ea91e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1130,7 +1132,7 @@ PrefabInstance:
     - target: {fileID: 643950122606757097, guid: e887fd8471928a740a2a681be82bbba6,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 34
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 643950122606757097, guid: e887fd8471928a740a2a681be82bbba6,
         type: 3}
@@ -1145,7 +1147,7 @@ PrefabInstance:
     - target: {fileID: 643950122606757097, guid: e887fd8471928a740a2a681be82bbba6,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 643950122606757097, guid: e887fd8471928a740a2a681be82bbba6,
         type: 3}
@@ -1383,7 +1385,7 @@ PrefabInstance:
     - target: {fileID: 643950122606757097, guid: e887fd8471928a740a2a681be82bbba6,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 34
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 643950122606757097, guid: e887fd8471928a740a2a681be82bbba6,
         type: 3}
@@ -1398,7 +1400,7 @@ PrefabInstance:
     - target: {fileID: 643950122606757097, guid: e887fd8471928a740a2a681be82bbba6,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 643950122606757097, guid: e887fd8471928a740a2a681be82bbba6,
         type: 3}
@@ -1773,7 +1775,7 @@ PrefabInstance:
     - target: {fileID: 643950122606757097, guid: e887fd8471928a740a2a681be82bbba6,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 34
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 643950122606757097, guid: e887fd8471928a740a2a681be82bbba6,
         type: 3}
@@ -1788,7 +1790,7 @@ PrefabInstance:
     - target: {fileID: 643950122606757097, guid: e887fd8471928a740a2a681be82bbba6,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 643950122606757097, guid: e887fd8471928a740a2a681be82bbba6,
         type: 3}
@@ -2020,7 +2022,7 @@ PrefabInstance:
     - target: {fileID: 643950122606757097, guid: e887fd8471928a740a2a681be82bbba6,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 34
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 643950122606757097, guid: e887fd8471928a740a2a681be82bbba6,
         type: 3}
@@ -2035,7 +2037,7 @@ PrefabInstance:
     - target: {fileID: 643950122606757097, guid: e887fd8471928a740a2a681be82bbba6,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 643950122606757097, guid: e887fd8471928a740a2a681be82bbba6,
         type: 3}
