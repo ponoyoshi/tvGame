@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
         currentQuestion++;
         if (currentQuestion < questions.Count)
         {
-            commonPanelWidget.SetCurrentQuestion(questions[currentQuestion], currentQuestion+1);
+            commonPanelWidget.SetCurrentQuestion(questions[currentQuestion], currentQuestion + 1);
 
         }
         else
@@ -59,5 +59,10 @@ public class GameManager : MonoBehaviour
         }
 
         commonPanelWidget.SetPlayerMoney(currentMoney);
+    }
+
+    public void DoubleMoney()
+    {
+        currentMoney *= 2;
     }
 }

@@ -17,6 +17,8 @@ public class CheaterProfiles : MonoBehaviour
             go.transform.localScale = new Vector3(1, 1, 1);
             go.name = profile.name;
             go.GetComponent<ProfileButton>().name = profile.name;
+            go.GetComponent<ProfileButton>().nameRef.text = profile.fullName;
+            go.GetComponent<ProfileButton>().scoreRef.text = profile.money.ToString();
         }
     }
 
