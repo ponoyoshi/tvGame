@@ -1220,3 +1220,5 @@ MonoBehaviour:
   victoryBackgroundImage: {fileID: 1387980973156591678}
   victoryText1: {fileID: 1999022829034981270}
   victoryText2: {fileID: 5604017159058427654}
+  cheaterSOref: {fileID: 11400000, guid: 1bc32b993b9552b4882fc0710bd6e29d, type: 2}
+  gameManagerRef: {fileID: 0}

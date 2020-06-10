@@ -26,6 +26,8 @@ public class FindCheaterManager : MonoBehaviour
     [SerializeField] private Image victoryBackgroundImage;
     [SerializeField] private TextMeshProUGUI victoryText1 = null;
     [SerializeField] private TextMeshProUGUI victoryText2 = null;
+    [SerializeField] private Profile cheaterSOref = null;
+    [SerializeField] private GameManager gameManagerRef = null;
 
     // Start is called before the first frame update
     void Start()
@@ -52,12 +54,14 @@ public class FindCheaterManager : MonoBehaviour
             victoryBackgroundImage.sprite = cheaterFoundSprite;
             victoryText1.text = cheaterFoundText1;
             victoryText2.text = cheaterFoundText2;
+            gameManagerRef.DoubleMoney();
         }
         else
         {
             victoryBackgroundImage.sprite = cheaterNotFoundSprite;
             victoryText1.text = cheaterNotFoundText1;
             victoryText2.text = cheaterNotFoundText2;
+            cheaterSOref.money *= 2;
         }   
     }
 
