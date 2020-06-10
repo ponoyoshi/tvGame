@@ -1428,6 +1428,11 @@ PrefabInstance:
       propertyPath: questionNumTileText
       value: 
       objectReference: {fileID: 904886415}
+    - target: {fileID: 3768161262827147161, guid: 6402dfcc866a34e4daf35e6480a63255,
+        type: 3}
+      propertyPath: gameManagerRef
+      value: 
+      objectReference: {fileID: 1215468924}
     - target: {fileID: 290677847, guid: 6402dfcc866a34e4daf35e6480a63255, type: 3}
       propertyPath: dataManager
       value: 
