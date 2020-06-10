@@ -1525,6 +1525,7 @@ GameObject:
   - component: {fileID: 999571324}
   - component: {fileID: 999571326}
   - component: {fileID: 999571325}
+  - component: {fileID: 999571327}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -1590,6 +1591,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 999571323}
   m_CullTransparentMesh: 0
+--- !u!95 &999571327
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999571323}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 168560bed26a3704f9ee4c69b032bd4d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1103159041
 GameObject:
   m_ObjectHideFlags: 0
@@ -4686,32 +4706,12 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7411119509438262219, guid: 7b282ea35a0f7df4d8cdde3f9ab86d98,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 4db212c21f8590244a7ad98d6a50f8a5, type: 3}
-    - target: {fileID: 7411119509438262219, guid: 7b282ea35a0f7df4d8cdde3f9ab86d98,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.15
-      objectReference: {fileID: 0}
     - target: {fileID: 3740539417446554638, guid: 7b282ea35a0f7df4d8cdde3f9ab86d98,
         type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 4db212c21f8590244a7ad98d6a50f8a5, type: 3}
     - target: {fileID: 3740539417446554638, guid: 7b282ea35a0f7df4d8cdde3f9ab86d98,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2154767966652209353, guid: 7b282ea35a0f7df4d8cdde3f9ab86d98,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 4db212c21f8590244a7ad98d6a50f8a5, type: 3}
-    - target: {fileID: 2154767966652209353, guid: 7b282ea35a0f7df4d8cdde3f9ab86d98,
         type: 3}
       propertyPath: m_Volume
       value: 0.15
@@ -4732,6 +4732,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 4db212c21f8590244a7ad98d6a50f8a5, type: 3}
     - target: {fileID: 1903179010464327036, guid: 7b282ea35a0f7df4d8cdde3f9ab86d98,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2154767966652209353, guid: 7b282ea35a0f7df4d8cdde3f9ab86d98,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4db212c21f8590244a7ad98d6a50f8a5, type: 3}
+    - target: {fileID: 2154767966652209353, guid: 7b282ea35a0f7df4d8cdde3f9ab86d98,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7411119509438262219, guid: 7b282ea35a0f7df4d8cdde3f9ab86d98,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4db212c21f8590244a7ad98d6a50f8a5, type: 3}
+    - target: {fileID: 7411119509438262219, guid: 7b282ea35a0f7df4d8cdde3f9ab86d98,
         type: 3}
       propertyPath: m_Volume
       value: 0.15
@@ -5293,6 +5313,7 @@ GameObject:
   - component: {fileID: 6139179336354981893}
   - component: {fileID: 2654025323594132190}
   - component: {fileID: 2438035760728273182}
+  - component: {fileID: 3689611092257320106}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -5300,6 +5321,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &3689611092257320106
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3689611092257320105}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 15e98f6baa4cba141bc6f20c2a5abce2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &4126619435942889505
 PrefabInstance:
   m_ObjectHideFlags: 0
