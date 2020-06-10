@@ -46,7 +46,7 @@ public class CandidatesPanelWidget : MonoBehaviour
         correctPredictions = 0;
         incorrectPredictions = 0;
 
-        for (int i = 0; i< currentCandidate.Length; i++)
+        for (int i = 0; i < currentCandidate.Length; i++)
         {
             if (currentCandidate[i].IsPredictionCorrect() == 1)
             {
@@ -166,13 +166,19 @@ public class CandidatesPanelWidget : MonoBehaviour
             rewardPopupTitle.enabled = true;
             rewardPopupBackground.sprite = positivePopupBackground;
             rewardPopupTitle.text = "Vous gagnez :";
-            
+
 
             gain = gameManager.MONEY_GAINED_PER_GOOD_PREDICTION * correctPredictions;
 
             rewardPopupDescription.text = gain.ToString();
             win = true;
-            
+
         }
+    }
+
+    public void LastMoneyUpdate()
+    {
+        Debug.Log(correctPredictions.ToString());
+        gameManager.OnRoundEnded2(correctPredictions, incorrectPredictions);
     }
 }
