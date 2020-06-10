@@ -156,6 +156,12 @@ public class CandidateTileWidget : MonoBehaviour
         {
             currentCandidate.money -= MONEY_LOST_PER_MISTAKE;
         }
+
+        //cap to 0
+        if (currentCandidate.money < 0)
+        {
+            currentCandidate.money = 0;
+        }
     }
 
     // 0 = no prediction, 1 = correct, 2 = incorrect
@@ -181,11 +187,6 @@ public class CandidateTileWidget : MonoBehaviour
         //wrong answer from candidate
         else
         {
-            if (currentCandidate.money < 0)
-            {
-                currentCandidate.money = 0;
-            }
-
             if (currentUpvoteScore == 2)
             {
                 return 2;
