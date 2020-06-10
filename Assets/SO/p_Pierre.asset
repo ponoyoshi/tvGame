@@ -18,8 +18,8 @@ MonoBehaviour:
   - Monde animal
   - "Langue fran\xE7aise"
   - "Mat\xE9riel electronique"
-  money: 0
-  score: 2
+  money: 2500
+  score: 0
   image: {fileID: 21300000, guid: abc9f0624f6eed54c8627d99ff433793, type: 3}
   answers:
   - answer: "Robert, \xE7a lui va bien"

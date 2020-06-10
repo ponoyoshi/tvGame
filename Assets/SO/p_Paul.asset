@@ -18,8 +18,8 @@ MonoBehaviour:
   - "Mat\xE9riel \xE9lectronique"
   - Politique
   - "Cin\xE9ma"
-  money: 3500
-  score: 1
+  money: 2500
+  score: 0
   image: {fileID: 21300000, guid: 2d3a711e2fefb4340a7dee93e2f81291, type: 3}
   answers:
   - answer: Enygma

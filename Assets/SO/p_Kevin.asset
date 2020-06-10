@@ -18,8 +18,8 @@ MonoBehaviour:
   - "Mat\xE9riel \xE9lectronique"
   - Philosophie
   - Monde Animal
-  money: 14500
-  score: 15
+  money: 2500
+  score: 0
   image: {fileID: 21300000, guid: 35dd00da4969a7a48a0eb6750268619b, type: 3}
   answers:
   - answer: Enigma
