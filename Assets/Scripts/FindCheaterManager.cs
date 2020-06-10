@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class FindCheaterManager : MonoBehaviour
@@ -16,6 +17,16 @@ public class FindCheaterManager : MonoBehaviour
     [SerializeField] private CheaterProfiles cheaterProfilesRef = null;
     [SerializeField]private string CheaterNamet = "p_Paul";
     [SerializeField] private Animator AnimRevealRef;
+    [SerializeField] private Sprite cheaterFoundSprite;
+    [SerializeField] private Sprite cheaterNotFoundSprite;
+    [SerializeField] private string cheaterFoundText1;
+    [SerializeField] private string cheaterFoundText2;
+    [SerializeField] private string cheaterNotFoundText1;
+    [SerializeField] private string cheaterNotFoundText2;
+    [SerializeField] private Image victoryBackgroundImage;
+    [SerializeField] private TextMeshProUGUI victoryText1 = null;
+    [SerializeField] private TextMeshProUGUI victoryText2 = null;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,11 +49,15 @@ public class FindCheaterManager : MonoBehaviour
         StartCoroutine(SetResult());
         if(name == CheaterNamet)
         {
-            Debug.Log("Win");
+            victoryBackgroundImage.sprite = cheaterFoundSprite;
+            victoryText1.text = cheaterFoundText1;
+            victoryText2.text = cheaterFoundText2;
         }
         else
         {
-            Debug.Log("Loose");
+            victoryBackgroundImage.sprite = cheaterNotFoundSprite;
+            victoryText1.text = cheaterNotFoundText1;
+            victoryText2.text = cheaterNotFoundText2;
         }   
     }
 
