@@ -145,15 +145,25 @@ public class CandidateTileWidget : MonoBehaviour
         StartCoroutine(PlayAnimationAfterDelay(transform.GetSiblingIndex() * 0.1f, "Hide"));
     }
 
+    public void UpdateMoney()
+    {
+        if (currentCandidate.answers[gameManager.currentQuestion].isTrue)
+        {
+            currentCandidate.score += 1;
+            currentCandidate.money += MONEY_GAINED_PER_SUCCESS;
+        }
+        else
+        {
+            currentCandidate.money -= MONEY_LOST_PER_MISTAKE;
+        }
+    }
+
     // 0 = no prediction, 1 = correct, 2 = incorrect
     public int IsPredictionCorrect()
     {
         //correct answer from candidate
         if (currentCandidate.answers[gameManager.currentQuestion].isTrue)
         {
-            currentCandidate.score += 1;
-            currentCandidate.money += MONEY_GAINED_PER_SUCCESS;
-
             if (currentUpvoteScore == 2)
             {
                 return 1;
@@ -171,8 +181,6 @@ public class CandidateTileWidget : MonoBehaviour
         //wrong answer from candidate
         else
         {
-            currentCandidate.money -= MONEY_LOST_PER_MISTAKE;
-
             if (currentCandidate.money < 0)
             {
                 currentCandidate.money = 0;

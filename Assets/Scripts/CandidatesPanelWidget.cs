@@ -57,6 +57,7 @@ public class CandidatesPanelWidget : MonoBehaviour
                 incorrectPredictions++;
             }
 
+            currentCandidate[i].UpdateMoney();
             currentCandidate[i].ShowAnswer();
             currentCandidate[i].onRoundEnded();
 
