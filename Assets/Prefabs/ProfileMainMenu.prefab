@@ -144,6 +144,7 @@ GameObject:
   - component: {fileID: 9104821011303917414}
   - component: {fileID: 670943123301214607}
   - component: {fileID: 8267352557502427182}
+  - component: {fileID: 4522041228945330371}
   m_Layer: 5
   m_Name: ProfileMainMenu
   m_TagString: Untagged
@@ -204,6 +205,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 670943123301214607}
+--- !u!114 &4522041228945330371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5298716758040614765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 872d9606c98bcba40b1804a5b86e4a58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 4549619068864402446}
 --- !u!1 &6081926581019114665
 GameObject:
   m_ObjectHideFlags: 0
