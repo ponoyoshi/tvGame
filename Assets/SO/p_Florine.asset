@@ -72,5 +72,5 @@ MonoBehaviour:
     isTrue: 0
   - answer: "La S\xE9rotonine"
     isTrue: 0
-  - answer: Oui
+  - answer: 'Oui '
     isTrue: 1
