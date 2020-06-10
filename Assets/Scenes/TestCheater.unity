@@ -1275,17 +1275,17 @@ PrefabInstance:
     - target: {fileID: 380081534304423525, guid: 6402dfcc866a34e4daf35e6480a63255,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 380081534304423525, guid: 6402dfcc866a34e4daf35e6480a63255,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 380081534304423525, guid: 6402dfcc866a34e4daf35e6480a63255,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 380081534304423525, guid: 6402dfcc866a34e4daf35e6480a63255,
         type: 3}
@@ -1312,11 +1312,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8786346662525840342, guid: 6402dfcc866a34e4daf35e6480a63255,
-        type: 3}
-      propertyPath: dataManager
-      value: 
-      objectReference: {fileID: 1215468923}
     - target: {fileID: 3768161262827147161, guid: 6402dfcc866a34e4daf35e6480a63255,
         type: 3}
       propertyPath: RefCandidatesPanel
@@ -1324,18 +1319,23 @@ PrefabInstance:
       objectReference: {fileID: 372612283}
     - target: {fileID: 3768161262827147161, guid: 6402dfcc866a34e4daf35e6480a63255,
         type: 3}
-      propertyPath: CheaterAsset
-      value: 
-      objectReference: {fileID: 1656425668}
-    - target: {fileID: 1943684675, guid: 6402dfcc866a34e4daf35e6480a63255, type: 3}
-      propertyPath: m_TextComponent
+      propertyPath: questionText
       value: 
       objectReference: {fileID: 1809708266}
-    - target: {fileID: 3364198595837666049, guid: 6402dfcc866a34e4daf35e6480a63255,
+    - target: {fileID: 3768161262827147161, guid: 6402dfcc866a34e4daf35e6480a63255,
         type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: questionNumText
+      value: 
+      objectReference: {fileID: 2144003421}
+    - target: {fileID: 3768161262827147161, guid: 6402dfcc866a34e4daf35e6480a63255,
+        type: 3}
+      propertyPath: questionNumTileText
+      value: 
+      objectReference: {fileID: 904886415}
+    - target: {fileID: 290677847, guid: 6402dfcc866a34e4daf35e6480a63255, type: 3}
+      propertyPath: dataManager
+      value: 
+      objectReference: {fileID: 1215468923}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6402dfcc866a34e4daf35e6480a63255, type: 3}
 --- !u!1 &1215468921 stripped
@@ -4315,7 +4315,7 @@ PrefabInstance:
     - target: {fileID: 4126619434545745751, guid: 985979412ae9a1a48b8a35a9ab2002ce,
         type: 3}
       propertyPath: questions.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4126619434545745751, guid: 985979412ae9a1a48b8a35a9ab2002ce,
         type: 3}
@@ -4545,12 +4545,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 985979412ae9a1a48b8a35a9ab2002ce, type: 3}
---- !u!1 &1656425668 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3364198595837666049, guid: 6402dfcc866a34e4daf35e6480a63255,
-    type: 3}
-  m_PrefabInstance: {fileID: 1071598744}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1784599138
 GameObject:
   m_ObjectHideFlags: 0
