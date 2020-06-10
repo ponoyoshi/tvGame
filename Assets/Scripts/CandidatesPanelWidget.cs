@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class CandidatesPanelWidget : MonoBehaviour
 {
+    [Header("Properties")]
     [SerializeField] private GameManager gameManager = null;
     [SerializeField] private DataManager dataManager = null;
 
@@ -20,9 +21,12 @@ public class CandidatesPanelWidget : MonoBehaviour
     [SerializeField] private TextMeshProUGUI rewardPopupTitle = null;
     [SerializeField] private TextMeshProUGUI rewardPopupDescription = null;
 
-    [SerializeField] private Color POSITIVE_COLOR = Color.green;
-    [SerializeField] private Color NEGATIVE_COLOR = Color.red;
+    [Header("Parameters")]
+    [SerializeField] private Sprite positivePopupBackground = null;
+    [SerializeField] private Sprite negativePopupBackground = null;
+    [SerializeField] private Sprite veryNegativePopupBackground = null;
 
+    [Header("Audio")]
     [SerializeField] private AudioClip WinSound = null;
     [SerializeField] private AudioClip LoseSound = null;
 
@@ -124,14 +128,14 @@ public class CandidatesPanelWidget : MonoBehaviour
         if (incorrectPredictions > 0 && correctPredictions == 0)
         {
             rewardPopupTitle.enabled = false;
-            rewardPopupBackground.color = NEGATIVE_COLOR;
+            rewardPopupBackground.sprite = veryNegativePopupBackground;
             rewardPopupDescription.text = "Gains divisés par deux";
             win = false;
         }
         else if (incorrectPredictions > 0)
         {
             rewardPopupTitle.enabled = true;
-            rewardPopupBackground.color = NEGATIVE_COLOR;
+            rewardPopupBackground.sprite = negativePopupBackground;
             rewardPopupTitle.text = "Vous perdez :";
 
 
@@ -143,7 +147,7 @@ public class CandidatesPanelWidget : MonoBehaviour
         else
         {
             rewardPopupTitle.enabled = true;
-            rewardPopupBackground.color = POSITIVE_COLOR;
+            rewardPopupBackground.sprite = positivePopupBackground;
             rewardPopupTitle.text = "Vous gagnez :";
             
 

@@ -795,6 +795,14 @@ MonoBehaviour:
   rewardPopupDescription: {fileID: 7227934463380536107}
   POSITIVE_COLOR: {r: 0.44313726, g: 0.95686275, b: 0.078431375, a: 1}
   NEGATIVE_COLOR: {r: 0.8962264, g: 0.10568706, b: 0.23096244, a: 1}
+  positivePopupBackground: {fileID: 21300000, guid: 813decdcd3b976046ab11f58c32df510,
+    type: 3}
+  negativePopupBackground: {fileID: 21300000, guid: e55f47b878f822245954ca9bf3356c21,
+    type: 3}
+  veryNegativePopupBackground: {fileID: 21300000, guid: 158928f7eddaef7479562f1ce80cabd7,
+    type: 3}
+  WinSound: {fileID: 0}
+  LoseSound: {fileID: 0}
 --- !u!95 &6280908664296798177
 Animator:
   serializedVersion: 3
@@ -1226,6 +1234,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8097345709785793756}
     m_Modifications:
+    - target: {fileID: 4967496394904873730, guid: e887fd8471928a740a2a681be82bbba6,
+        type: 3}
+      propertyPath: currentCandidate
+      value: 
+      objectReference: {fileID: 11400000, guid: a6015ec541d2a29449c35f8a3e883dd5,
+        type: 2}
     - target: {fileID: 737175041373053291, guid: e887fd8471928a740a2a681be82bbba6,
         type: 3}
       propertyPath: m_Name
@@ -1336,12 +1350,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4967496394904873730, guid: e887fd8471928a740a2a681be82bbba6,
-        type: 3}
-      propertyPath: currentCandidate
-      value: 
-      objectReference: {fileID: 11400000, guid: a6015ec541d2a29449c35f8a3e883dd5,
-        type: 2}
     - target: {fileID: 2164511039924630259, guid: e887fd8471928a740a2a681be82bbba6,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -1616,6 +1624,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8097345709785793756}
     m_Modifications:
+    - target: {fileID: 4967496394904873730, guid: e887fd8471928a740a2a681be82bbba6,
+        type: 3}
+      propertyPath: currentCandidate
+      value: 
+      objectReference: {fileID: 11400000, guid: a6015ec541d2a29449c35f8a3e883dd5,
+        type: 2}
     - target: {fileID: 737175041373053291, guid: e887fd8471928a740a2a681be82bbba6,
         type: 3}
       propertyPath: m_Name
@@ -1726,12 +1740,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4967496394904873730, guid: e887fd8471928a740a2a681be82bbba6,
-        type: 3}
-      propertyPath: currentCandidate
-      value: 
-      objectReference: {fileID: 11400000, guid: a6015ec541d2a29449c35f8a3e883dd5,
-        type: 2}
     - target: {fileID: 2164511039924630259, guid: e887fd8471928a740a2a681be82bbba6,
         type: 3}
       propertyPath: m_textInfo.characterCount
