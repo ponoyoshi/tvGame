@@ -63,6 +63,7 @@ public class CandidateTileWidget : MonoBehaviour
         currentUpvoteScore = 0;
         ResetDefaultVisual();
 
+        animator.ResetTrigger("Unvote");
         StartCoroutine(PlayAnimationAfterDelay(transform.GetSiblingIndex() * 0.2f, "Appear"));
     }
 
@@ -80,16 +81,19 @@ public class CandidateTileWidget : MonoBehaviour
     private void SetUpdvotedVisual()
     {
         background.color = UPVOTE_COLOR;
+        animator.SetTrigger("Upvote");
     }
 
     private void SetDownvotedVisual()
     {
         background.color = DOWNVOTE_COLOR;
+        animator.SetTrigger("Downvote");
     }
 
     private void ResetDefaultVisual()
     {
         background.color = DEFAULT_COLOR;
+        animator.SetTrigger("Unvote");
     }
 
     public void OnUpvotePressed()
