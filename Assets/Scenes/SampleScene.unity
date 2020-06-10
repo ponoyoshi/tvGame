@@ -1030,6 +1030,26 @@ PrefabInstance:
       propertyPath: dataManager
       value: 
       objectReference: {fileID: 549827628}
+    - target: {fileID: 102729504, guid: 6402dfcc866a34e4daf35e6480a63255, type: 3}
+      propertyPath: m_text
+      value: 2500 euros !
+      objectReference: {fileID: 0}
+    - target: {fileID: 102729504, guid: 6402dfcc866a34e4daf35e6480a63255, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 507730172, guid: 6402dfcc866a34e4daf35e6480a63255, type: 3}
+      propertyPath: m_text
+      value: "Vous avez gagn\xE9.e\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 507730172, guid: 6402dfcc866a34e4daf35e6480a63255, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 507730172, guid: 6402dfcc866a34e4daf35e6480a63255, type: 3}
+      propertyPath: m_isRightToLeft
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6402dfcc866a34e4daf35e6480a63255, type: 3}
 --- !u!114 &621963289 stripped
