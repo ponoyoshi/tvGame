@@ -130,6 +130,7 @@ public class CandidatesPanelWidget : MonoBehaviour
             rewardPopupTitle.enabled = false;
             rewardPopupBackground.sprite = veryNegativePopupBackground;
             rewardPopupDescription.text = "Gains divisés par deux";
+            animator.SetBool("isTitleShown", false);
             win = false;
         }
         else if (incorrectPredictions > 0)
@@ -137,6 +138,8 @@ public class CandidatesPanelWidget : MonoBehaviour
             rewardPopupTitle.enabled = true;
             rewardPopupBackground.sprite = negativePopupBackground;
             rewardPopupTitle.text = "Vous perdez :";
+            animator.SetBool("isTitleShown", true);
+
 
 
             gain = gameManager.MONEY_LOST_PER_MISTAKE * incorrectPredictions;
@@ -149,6 +152,8 @@ public class CandidatesPanelWidget : MonoBehaviour
             rewardPopupTitle.enabled = true;
             rewardPopupBackground.sprite = negativePopupBackground;
             rewardPopupTitle.text = "Vous gagnez :";
+            animator.SetBool("isTitleShown", true);
+
 
 
             gain = 0;
