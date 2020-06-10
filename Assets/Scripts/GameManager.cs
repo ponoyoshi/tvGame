@@ -20,17 +20,21 @@ public class GameManager : MonoBehaviour
         SetMoney(correctPredictions, incorrectPredictions);
         candidatePanelWidget.SetCandidateTiles();
     }
+    public void OnRoundEnded2(int correctPredictions, int incorrectPredictions)
+    {
+        SetMoney(correctPredictions, incorrectPredictions);
+    }
 
     public void SetCurrentQuestion()
     {
         currentQuestion++;
         if (currentQuestion < questions.Count)
         {
-            commonPanelWidget.SetCurrentQuestion(questions[currentQuestion], currentQuestion + 1);
-
+            commonPanelWidget.SetCurrentQuestion(questions[currentQuestion], currentQuestion + 1);  
         }
         else
         {
+            candidatePanelWidget.LastMoneyUpdate();
             cheaterManager.SetCheaterPhase();
         }
     }
