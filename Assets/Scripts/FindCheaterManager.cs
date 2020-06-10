@@ -14,6 +14,8 @@ public class FindCheaterManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI questionNumText = null;
     [SerializeField] private TextMeshProUGUI questionNumTileText = null;
     [SerializeField] private CheaterProfiles cheaterProfilesRef = null;
+    [SerializeField]private string CheaterNamet = "p_Paul";
+    [SerializeField] private Animator AnimRevealRef;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,11 +29,31 @@ public class FindCheaterManager : MonoBehaviour
         questionNumTileText.text = "";
         RefCandidatesPanel.SetActive(false);
         CheaterAsset.SetActive(true);
-        cheaterProfilesRef.SetProfile();
+        StartCoroutine(SetProfiles());
     }
 
     public void ChooseProfile(string name)
     {
-        Debug.Log("Choose");
+        AnimRevealRef.gameObject.SetActive(true);
+        StartCoroutine(SetResult());
+        if(name == CheaterNamet)
+        {
+            Debug.Log("Win");
+        }
+        else
+        {
+            Debug.Log("Loose");
+        }   
+    }
+
+    private IEnumerator SetProfiles ()
+    {
+        yield return new WaitForSeconds(2.2f);
+        cheaterProfilesRef.SetProfile();
+    }
+    private IEnumerator SetResult()
+    {
+        yield return new WaitForSeconds(0.1f);
+        AnimRevealRef.SetBool("Reveal", true);
     }
 }
