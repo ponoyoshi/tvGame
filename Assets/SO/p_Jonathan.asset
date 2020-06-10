@@ -18,9 +18,9 @@ MonoBehaviour:
   - Mange et anime
   - Monde animal
   - Astronomie
-  money: 2500
-  score: 0
-  image: {fileID: 21300000, guid: 2a589c2ce53d2f7439425ac231c5b4ee, type: 3}
+  money: 11500
+  score: 14
+  image: {fileID: 21300000, guid: d844d5b01843ef342a83da2bcff57632, type: 3}
   answers:
   - answer: Enigma
     isTrue: 1

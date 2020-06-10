@@ -18,9 +18,9 @@ MonoBehaviour:
   - "Mat\xE9riel \xE9lectronique"
   - Politique
   - Manga et Anime
-  money: 2500
-  score: 0
-  image: {fileID: 21300000, guid: ee0afb647c1b31f4f82c9fe839eb8881, type: 3}
+  money: 8500
+  score: 14
+  image: {fileID: 21300000, guid: f9ac3d20f7dce9c448272da5ff084632, type: 3}
   answers:
   - answer: Enigma
     isTrue: 1

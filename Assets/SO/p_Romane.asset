@@ -18,9 +18,9 @@ MonoBehaviour:
   - Peinture et Sculpture
   - Philosophie
   - Manga et Anime
-  money: 2500
-  score: 0
-  image: {fileID: 21300000, guid: 11a067d33c125174f8c507002468c24b, type: 3}
+  money: 2000
+  score: 2
+  image: {fileID: 21300000, guid: 4c0e088b65f98a143ad452e031df81c4, type: 3}
   answers:
   - answer: Enigma
     isTrue: 1

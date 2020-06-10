@@ -18,9 +18,9 @@ MonoBehaviour:
   - Informatique
   - Monde animal
   - Nourriture et nutrition
-  money: 2500
-  score: 0
-  image: {fileID: 21300000, guid: 767c84af97a8a3f45aa726747a68b77d, type: 3}
+  money: 10500
+  score: 8
+  image: {fileID: 21300000, guid: 73d2dec2a2141334bb5751b6a53024e5, type: 3}
   answers:
   - answer: Enigma
     isTrue: 1
